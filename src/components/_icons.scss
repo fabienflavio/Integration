@@ -1,0 +1,74 @@
+.icons{
+   &--arrow{
+        display: inline-block;
+        border: 2px dotted black;
+        border-radius: 100%;
+        font-size: 1.6rem;
+        padding:.6rem .8rem;
+        transform: translateY(-10px);
+        &-left{
+            transform: rotate(-45deg);
+        }
+   } 
+   &--header{
+        position: absolute;
+        padding: .8rem 1rem ;
+        border-radius: 100%;
+        font-size: .8rem;
+        transform: translateX(-3rem);
+        background-color: $color-cleaner;
+   }
+
+   &--header-left{
+        border-radius: 100%;
+        padding: .6rem .8rem ;
+        transform: translateX(-1rem);
+        background-color: $color-transparent-white;
+        color: $color-white;
+        
+   }
+
+   &--fb-inst{
+     color: black;
+     font-size: 1rem;
+   
+     padding: .2rem;
+     width: 1.5rem;
+     height: 1.5rem;
+     text-align: center;
+     background-color:$color-cleaner ;
+   }
+   &--mouse{
+     position: absolute;
+     bottom: 1.5rem;
+     @media screen and (max-width:1200px) {
+          &{
+               display: none !important;
+          }
+     }
+     @media screen and (max-width:575px) {
+          &{
+               display: none !important;
+               
+          }
+     }
+   }
+
+   &-img{
+     position: absolute;
+     right: .8rem;
+     top: .8em;
+     border: var(--white) .2rem solid;
+     border-radius: .8rem;
+     padding: .5rem;
+     background-color: var(--white-transparent);
+     color: var(--white);
+   }
+
+   &-header-card{
+     padding: 2rem;
+     border-radius: 100%;
+     color: var(--black);
+     background-color: var(--white);
+   }
+}

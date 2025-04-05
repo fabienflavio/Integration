@@ -1,0 +1,165 @@
+.cta {
+    &--simple {
+      padding: 0.8rem 2.1rem;
+      border-radius: 3.2rem;
+      font-size: 1.6rem;
+      background-color: $color-white !important;
+      color: $color-black;
+  
+      &:hover {
+        background-color: $color-white--2 !important;
+        transition: all .5s;
+      }
+    }
+  
+    &--hover-reverse {
+      padding: 0.8rem 2.1rem;
+      border-radius: 3.2rem;
+      font-size: 1.6rem;
+      border: 0.2rem solid $color-white;
+      background-color: $color-transparent;
+      color: $color-white;
+  
+      &:hover {
+        border: 0.2px solid $color-white;
+        background-color: $color-white;
+        color: $color-black;
+        transition: all .5s;
+      }
+    }
+  
+    &--simple-big {
+      padding: 1.4rem 2.1rem;
+      border-radius: 3.2rem;
+      border: 0;
+      font-size: 1.6rem;
+      background-color: $color-primary !important;
+      color: $color-white;
+  
+      &:hover {
+        transform: scale(1.04);
+        transition: all .5s;
+      }
+  
+      @media screen and (max-width: 575px) {
+        & {
+          padding: 0.4rem 2.1rem;
+          border-radius: 3.2rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  
+    &--subscriber {
+      padding: 1rem 1.8rem;
+      border-radius: 5rem;
+      border: 0;
+      font-size: 1.2rem;
+      background-color: $color-white;
+  
+      &:hover {
+        transform: scale(1.04);
+        transition: all .5s;
+      }
+    }
+  
+    &--buy-blue {
+      padding: 1rem 2rem;
+      border: 0;
+      font-weight: 500;
+      background-color: var(--blue-primary);
+      color: var(--white);
+  
+      &:hover {
+        background-color: var(--blue-primary-hover);
+        transition: all .5s;
+      }
+    }
+  
+    &--buy-white {
+      padding: 1rem 2rem;
+      border: 0;
+      font-weight: 500;
+      background-color: var(--white);
+  
+      &:hover {
+        background-color: var(--gray-2);
+        transition: all .5s;
+      }
+    }
+  
+    &-nostyle {
+      padding-top: 5rem;
+      border: 0;
+      font-weight: 500;
+      background-color: var(--white);
+  
+      &:hover {
+        background-color: var(--gray-2);
+        transition: all .5s;
+      }
+    }
+  
+    &--buy-w-full {
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: 0;
+      box-shadow: 0.4rem 0.4rem 4rem var(--gray-1);
+      font-weight: 500;
+      background-color: var(--white);
+  
+      &:hover {
+        background-color: var(--gray-2);
+        transition: all .5s;
+      }
+    }
+  
+    &--buy-w-full-blue {
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: 0;
+      box-shadow: 0.4rem 0.4rem 4rem var(--gray-1);
+      font-weight: 500;
+      background-color: var(--blue-primary);
+      color: var(--white);
+  
+      &:hover {
+        background-color: var(--blue-primary-hover);
+        transition: all .5s;
+      }
+    }
+  
+    &--buy-none {
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: 0.2rem solid var(--white);
+      font-weight: 500;
+      background-color: var(--transparent);
+      color: var(--white);
+  
+      &:hover {
+        background-color: var(--white);
+        color: black;
+        transition: all .5s;
+      }
+    }
+  
+    &--buy-b-black {
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: 0.2rem solid var(--gray-1);
+      font-weight: 500;
+      background-color: var(--transparent);
+      color: var(--black);
+  
+      &:hover {
+        background-color: var(--gray-2);
+        transition: all .5s;
+      }
+    }
+  }
+  

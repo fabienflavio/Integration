@@ -1,0 +1,55 @@
+.card{
+    position: absolute;
+    width: 46.6rem;
+    height: 20.3rem; /* **** */
+    right: 0;
+    bottom: 0;
+    border: 0;
+    border-radius: 2.4rem 0 0 0;
+    padding: 2.4rem;
+    text-transform: capitalize;
+    @media screen and (max-width: 991px) {
+        &{
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%) translateY(14rem);
+            border-radius: 2.4rem;
+            padding: 2.4rem;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &{
+            position: absolute;
+            width: 30.6rem;
+            height: 20.3rem; /* **** */
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%) translateY(14rem);
+            bottom: 0rem;
+            border: 0;
+            border-radius: 2.4rem;
+            padding: 2.4rem;
+        }
+    }
+
+    
+   &--subcriber{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 3rem; 
+        
+        gap: 2rem;
+        &__content{
+            width: 100%;
+            
+        }
+        @media screen and (max-width: 575px) {
+            &{       
+                 gap: 0.1rem;
+            }
+         
+     }
+   }
+
+}

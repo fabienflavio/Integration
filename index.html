@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration </title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <style>
+            .box {
+                position: relative;
+                padding: 2rem 3rem;
+                display: inline-block;
+            }
+
+            .box::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 50px;
+                padding: 10px; /* control the border thickness */
+                background: linear-gradient(45deg, red, blue);
+                -webkit-mask: 
+                    linear-gradient(#fff 0 0) content-box, 
+                    linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                        mask-composite: exclude;
+                pointer-events: none;
+            }
+    </style>
+</head>
+<body>
+    <!-- Layout -->
+    <div class="container">
+        <div class="layout layout--home-dream">
+            <img class="layout__img" src="img/nastygilrs-2347387_1280.jpg" alt="">
+            <img class="img img__vector-rigth" src="img/Path.png" alt="">
+            <img class="img img__vector-bottom" src="img/Path.png" alt="">
+            
+            <div class="layout__content">
+                <h1 class="title title--big-header">Find your dream home today</h1>
+                <p class="description description--big-header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repudiandae dolorum velit, hic similique minima facere magni itaque eligendi? Quibusdam </p>
+                <div class="layout__container-btn">
+                    <button class="cta cta--simple">View</button>
+                    <button class="cta cta--hover-reverse">learn More</button>
+                </div>
+                <div class="layout__content--card  card">  
+                    <h2 class="title title--nature">Who we are ?</h2>
+                    <p class="description description--nature"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde perferendis doloremque rerum exercitatio </p>
+                    <div class="card--subcriber">
+                        <div class="card--subcriber__content ">
+                            <h3 class="title title--number">80+</h3>
+                            <p class="description description--number"> @termunate House</p>
+                        </div>
+                        <div class="card--subcriber__content ">
+                            <h3 class="title title--number">500+</h3>
+                            <p class="description description--number"> Agents House</p>
+                        </div>
+                        <div class="card--subcriber__content ">
+                            <h3 class="title title--number">2K+</h3>
+                            <p class="description description--number"> Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br><br><br><br><br><br><br><br>
+    <hr>
+
+    <!--  Hero  -->
+    <div >
+        <div class="hero hero--home-dream">
+            <img class="hero__img" src="img/woman-working-call-center.jpg" alt="">
+            <div class="hero__content">
+                <h1 class="title title--big-header--bold">Keep your small healty</h1>
+                <p class="description description--primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repudiandae dolorum velit, hic similique minima facere magni itaque eligendi? Quibusdam </p>
+                <div class="hero__container-btn">
+                    <button class="cta cta--simple-big">Request Apuint</button>
+                    <p class="description description--call">Or Call +0125979565656</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br><br><br><br><br><br><br><br>
+    <hr>
+
+    <!--  Cleaner  -->
+    <div class="cleaner cleaner--container">
+        <div class="cleaner__content">
+            <img class="img img--content" src="img/bg-yellow.png" alt="">
+            <div class="cleaner__content-box">
+                <h2 class="title title--souscriber"><i class="fa-solid fa-star"></i> Souscriber Group</h2>
+                <h1 class="title title--saving">
+                    Saving <span class="icons icons--arrow"> <i class="fa-solid fa-arrow-right icons--arrow-left"></i> </span>  Nature & Fighting <u>Climate</u>  Change Together
+                </h1>
+                <form class="cleaner__content-box_form">
+                    <input placeholder="Enter your email" class="input input--text-subscriber" type="text">
+                    <button class="cta cta--subscriber" type="submit">Subscriber <i class="fa-solid fa-arrow-right "></i> </button>
+                </form>
+                <div class="cleaner__content-box__suscriber">
+                    <div class="cleaner__content-box__suscriber_container-image-person">
+                        <img class="img img--person-one" src="img/transparent.png" alt="">
+                        <img class="img img--person-two" src="img/transparent.png" alt="">
+                        <img class="img img--person-three" src="img/transparent.png" alt="">
+                    </div>
+                    <p class="description description--img-person">
+                        at quam dolor assumenda ipsum laborum quos quasi veniam!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-computer-mouse icons--mouse"></i>
+        <div class="cleaner__img">
+            <img class="img img--desert" src="img/Group-img.png" alt="">
+            <div class="cleaner__img-box" >
+                <div class="cleaner__img-box__header">
+                    <div class="cleaner__img-box__header__container">
+                        <img src="img/div.png" alt="">
+                        <span class="icons icons--header"> <i class="fa-solid fa-arrow-right icons--arrow-left"></i> </span> 
+                        <div class="cleaner__img-box__header-content">
+                            <img class="img img--header-person" src="img/nastygilrs-2347387_1280.jpg" alt="">
+                            <div class="">
+                                <p class="dot dot-simple" ></p>
+                                <p class="description description--header-person">her & catt ertuirt dfdf</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <span class="icons icons--header-left"> <i class="fa-solid fa-fire-flame-simple"></i> </span>
+                </div>
+
+                <div class="cleaner__img-box__content">
+                    <div class="cleaner__img-box__content__style">
+                        <span class="cleaner__img-box__content__style__dot">
+                            <span class="dot dot-very-simple" ></span>
+                        </span>
+                        <p class="description description--style">GIO Embed</p>
+                    </div>
+                </div>
+                <div class="cleaner__img-box__content--left">
+                    <div class="cleaner__img-box__content__style">
+                        <span class="cleaner__img-box__content__style__dot">
+                            <span class="dot dot-very-simple" ></span>
+                        </span>
+                        <p class="description description--style">GIO Embed</p>
+                    </div>
+                </div>
+                <div class="cleaner__img-box__content--center">
+                    <div class="cleaner__img-box__content__style">
+                        <span class="cleaner__img-box__content__style__dot">
+                            <span class="dot dot-very-simple" ></span>
+                        </span>
+                        <p class="description description--style">GIO Embed</p>
+                    </div>
+                </div>
+                <div class="cleaner__img-box__content--footer">
+                    <div class="cleaner__img-box__content__style">
+                        <span class="cleaner__img-box__content__style__dot-rounded">
+                            <i class="fa-brands fa-instagram icons--fb-inst"></i>
+                        </span>
+                        <span class="cleaner__img-box__content__style__dot-rounded">
+                            <i class="fa-brands fa-facebook-f icons--fb-inst"></i>
+                        </span>
+                        <p class="description description--style-left">sit amet consectetur, adipisicing</p>
+                    </div>
+                </div>
+                <div class="cleaner__img-box__footer">
+                    <img  src="img/div2.png" alt="">
+                    <div class="cleaner__img-box__footer__content">
+                        <p class="description description--img-person-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit flit </p>
+                    </div>
+                    
+                </div>
+                <div class="cleaner__img-box__footer--kit">
+                    <p class="description description--img-person-footer">Lorem ipsum dolor sit amet consecsr ipisicing elit. Omnis, iure cumque fret </p>
+                </div>              
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br><br><br><br><br><br><br><br>
+    <hr>
+
+
+     <!--  button  -->
+    <div class="container__button">
+        <div>
+            <button class="cta cta--bg-black"> <span>VIEW MORE</span>  <i class="fa-solid fa-angle-right cta--bg-black-icons"></i>  </button>
+        </div>
+    
+        <div class="container__button--shadow-yellow">
+            <button class="cta cta--shadow-yellow"> VIEW MORE </button>
+            <span class="cta--shadow-yellow-back"></span> 
+        </div>
+    
+        <div class="container__button--double-border-solid">
+            <button class="cta cta--double-border-solid"> VIEW MORE </button>
+            <span class="cta--double-border-solid-back"></span>
+        </div>
+
+        <div class="container__button--double-border-dashed">
+            <button class="cta cta--double-border-dashed"> VIEW MORE </button>
+            <span class="cta--double-border-dashed-back"></span>
+        </div>
+
+        <div >
+            <button class="cta cta--border-dashed"> <span>VIEW MORE</span>  <i class="fa-solid fa-angle-right cta--border-dashed-icons"></i> </button>
+        </div>
+
+        <div >
+            <button class="cta cta--box-shadow"> VIEW MORE  <span class="cta--box-shadow_contanier"><i class="fa-solid fa-angle-right cta--box-shadow_contanier-icons"></i></span>  </button>
+        </div>
+
+        <div >
+            <button class="cta cta--arrow"> VIEW MORE  <span class="cta--arrow-container"><i class="cta--arrow-container-icons fa-solid fa-arrow-right-long "></i></span>  </button>
+        </div>
+
+        <div class="container__button--border-top-bottom-dashed">
+            <button class="cta cta--border-top-bottom-dashed"> VIEW MORE </button>
+            <span class="cta--border-top-bottom-dashed-back"></span> 
+        </div>
+
+        <div>
+            <button class="cta cta--simple-shadow"> VIEW MORE </button>
+        </div>
+
+
+        <div>
+            <button class="cta cta--border-top-bottom"> <span>VIEW MORE</span>  <i class="fa-solid fa-angle-right cta--border-top-bottom-icons"></i> </button>
+        </div>
+
+        <div class="container__button--four-border-part">
+            <button class="cta cta--four-border-part"> VIEW MORE </button>
+            <span class="cta--four-border-part--border-one"></span>
+            <span class="cta--four-border-part--border-two"></span>
+            <span class="cta--four-border-part--border-three"></span>
+            <span class="cta--four-border-part--border-four"></span>
+        </div>
+
+        <div class="container__button--border-slash">
+            <button class="cta cta--border-slash"> VIEW MORE   </button>
+            <span class="cta--border-slash--border-one"></span>           
+            <span class="cta--border-slash--border-two"></span>
+        </div>
+
+        <div>
+            <button class="cta cta--icons-priority">  <i class="fa-solid fa-arrow-right cta--icons-priority-icons"></i>  <span>VIEW MORE</span>  </button>
+        </div>
+
+        <div>
+            <button class="cta cta--bg-linear-gradient">   VIEW MORE  </button>
+        </div>
+
+        <div class="cta cta--border-linear-gradient-border-text">
+            <span class="cta--border-linear-gradient-border-text--content">VIEW MORE</span>
+        </div>
+
+        <div >
+            <button class="cta cta--border-bottom-icons"> VIEW MORE  <span class="cta--border-bottom-icons-container "><i class="fa-solid fa-angle-right cta--border-bottom-icons-container-icons"></i>  </span>  </button>
+        </div>
+
+        <div>
+            <button class="cta cta--cercle-back"> <span>VIEW MORE</span>  <i class="fa-solid fa-arrow-right-long cta--cercle-back-angle-right"></i>  <i class="fa-solid fa-circle-notch cta--cercle-back-circle-notch"></i> </button>
+        </div>
+
+        <div >
+            <button class="cta cta--dot-arrow"> <span class="cta--dot-arrow-dot"></span> <span>VIEW MORE</span>  <i class="fa-solid fa-angle-right cta--dot-arrow--arrow"></i> </button>
+        </div>
+
+    </div>
+
+    <hr>
+    <br><br><br><br><br><br><br><br>
+    <hr>
+
+    <!--  5  -->
+    <div class="container__card">
+        <div class="container__card--normal">
+            <div class="container__card--normal__standard">
+                <img class="img img--card-normal" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card">Lorem ipsum dolor sit  </h2>
+                <p  class="description description--content-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim voluptas voluptatem blanditiis hic asperiores illo consequatur mollitia quiai dignissimos ipsam.</p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--normal__standard">
+                <img class="img img--card-normal" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card">Lorem ipsum dolor sit  </h2>
+                <p class="description description--content-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aliquid nisi corrupti, ipsam explicabo eligendi culpa odio minus quisquam nesciunt laboriosam </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--simple-normal">
+            <div class="container__card--simple-normal__standard">
+                <img class="img img--card-simple-normal" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card">Lorem  </h2>
+                <p  class="description description--content-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim voluptas voluptatem .</p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-normal__standard">
+                <img class="img img--card-simple-normal" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card">Lorem  </h2>
+                <p class="description description--content-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aliquid nisi corrupti, ipsam  </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-normal__standard">
+                <img class="img img--card-simple-normal" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card">Lorem  </h2>
+                <p class="description description--content-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aliquid nisi corrupti, ipsam  </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--rounded-profils container">
+            <div class="container__card--rounded-profils__standard">
+                <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div>
+                    <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                    <p  class="description description--content-card-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+            </div>
+            <div class="container__card--rounded-profils__standard">
+                <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div>
+                    <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                    <p  class="description description--content-card-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+            </div>
+            <div class="container__card--rounded-profils__standard">
+                <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div>
+                    <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                    <p  class="description description--content-card-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+            </div>
+            <div class="container__card--rounded-profils__standard">
+                <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div>
+                    <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                    <p  class="description description--content-card-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+            </div>
+            <div class="container__card--rounded-profils__standard">
+                <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div>
+                    <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                    <p  class="description description--content-card-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+            </div>
+            <div class="container__card--rounded-profils__standard">
+                <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div>
+                    <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                    <p  class="description description--content-card-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--buy">
+            <div class="container__card--buy__standard container__card--buy__standard--1">
+                <p class="description description--content-card">Acheté</p>
+                <h1 class="title title-money">$25</h1>
+                <p  class="description description--content-card-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim voluptas voluptatem blanditiis hic asperiores </p>
+                <button class="cta cta--buy-blue">Primaire</button>
+            </div>
+            <div class="container__card--buy__standard container__card--buy__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37</h1>
+                <p class="description description--content-card-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aliquid nisi corrupti, ipsam explicabo eligendi culpa odio  </p>
+                <button class="cta cta--buy-white">Primaire</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--simple-content">
+            <div class="container__card--simple-content__standard">
+                <img class="img img--card-simple-content" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div class="container__card--simple-content__standard__content">
+                    <h2 class="title title--header-card">Lorem</h2>
+                    <p  class="description description--content-card">Lorem ipsum dolor sit amet consectetur adipisicing elit.  .</p>
+                    <i class="fa-solid fa-computer-mouse icons-img"></i>
+                    <button class="cta cta-nostyle">Voir plus d'info</button>
+                </div>
+            </div>
+            <div class="container__card--simple-content__standard">
+                <img class="img img--card-simple-content" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div class="container__card--simple-content__standard__content">
+                    <h2 class="title title--header-card">Lorem</h2>
+                    <p  class="description description--content-card">Lorem ipsum dolor sit amet consectetur adipisicing elit.  .</p>
+                    <i class="fa-solid fa-computer-mouse icons-img"></i>
+                    <button class="cta cta-nostyle">Voir plus d'info</button>
+                </div>
+            </div>
+            <div class="container__card--simple-content__standard">
+                <img class="img img--card-simple-content" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <div class="container__card--simple-content__standard__content">
+                    <h2 class="title title--header-card">Lorem</h2>
+                    <p  class="description description--content-card">Lorem ipsum dolor sit amet consectetur adipisicing elit.  .</p>
+                    <i class="fa-solid fa-computer-mouse icons-img"></i>
+                    <button class="cta cta-nostyle">Voir plus d'info</button>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--content">
+            <div class="container__card--content__standard container__card--content__standard--2">
+                <div class=""> <i class="fa-solid fa-computer-mouse icons-header-card"></i> </div>
+                <h2 class="title title--header-card">Title Description</h2>
+                <p  class="description description--content-card-center">Lorem ipsum dolor sit amet consectetur  </p>
+            </div>
+            <div class="container__card--content__standard container__card--content__standard--2">
+                <div class=""> <i class="fa-solid fa-computer-mouse icons-header-card"></i> </div>
+                <h2 class="title title--header-card">Title Description</h2>
+                <p class="description description--content-card-center">Lorem ipsum dolor sit amet consectetur,   </p>
+            </div>
+            <div class="container__card--content__standard container__card--content__standard--2">
+                <div class=""> <i class="fa-solid fa-computer-mouse icons-header-card"></i> </div>
+                <h2 class="title title--header-card">Title Description</h2>
+                <p  class="description description--content-card-center">Lorem ipsum dolor sit amet consectetur  </p>
+            </div>
+            <div class="container__card--content__standard container__card--content__standard--2">
+                <div class=""> <i class="fa-solid fa-computer-mouse icons-header-card"></i> </div>
+                <h2 class="title title--header-card">Title Description</h2>
+                <p class="description description--content-card-center">Lorem ipsum dolor sit amet consectetur,   </p>
+            </div>
+        </div>
+
+        <hr>
+       
+        <div class="container__card--content-profils">
+            <div class="container__card--content-profils__standard container__card--content-profils__standard--2">
+                <p  class="description description--content-card-start">Lorem ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi perspiciatis quos commodi vitae neque. Quaerat at laboriosam accusamus incidunt esse maiores consequatur, hic eligendi qui officia dignissimos possimus quia nisi. </p>
+                <div class="container__card--content-profils__standard__profils">
+                    <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                    <div>
+                        <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                        <p  class="description description--content-card-profils">Lorem ipsum dolor </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__card--content-profils__standard container__card--content-profils__standard--2">
+                <p class="description description--content-card-start">Lorem ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi perspiciatis quos commodi vitae neque. Quaerat at laboriosam accusamus incidunt esse maiores consequatur, hic eligendi qui officia dignissimos possimus quia nisi.   </p>
+                <div class="container__card--content-profils__standard__profils">
+                    <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                    <div>
+                        <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                        <p  class="description description--content-card-profils">Lorem ipsum dolor </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__card--content-profils__standard container__card--content-profils__standard--2">
+                <p  class="description description--content-card-start">Lorem ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi perspiciatis quos commodi vitae neque. Quaerat at laboriosam accusamus incidunt esse maiores consequatur, hic eligendi qui officia dignissimos possimus quia nisi. </p>
+                <div class="container__card--content-profils__standard__profils">
+                    <img class="img img--card-round" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                    <div>
+                        <h2 class="title title--header-card-row">Lorem ipsum dolor sit  </h2>
+                        <p  class="description description--content-card-profils">Lorem ipsum dolor </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--simple-height">
+            <div class="container__card--simple-height__standard">
+                <img class="img img--card-simple-height" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p  class="description description--content-card-8">Lorem ipsum dolor </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-height__standard">
+                <img class="img img--card-simple-height" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p class="description description--content-card-8">Lorem ipsum dolor   </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-height__standard">
+                <img class="img img--card-simple-height" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p class="description description--content-card-8">Lorem ipsum dolor   </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--buy-description">
+            <div class="container__card--buy-description__standard container__card--buy-description__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37</h1>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Primaire</li>
+                    <li>dolor sit</li>
+                    <li>consectetur,</li>
+                    <li>Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-w-full">Primaire</button>
+            </div>
+            <div class="container__card--buy-description__standard container__card--buy-description__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37</h1>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Primaire</li>
+                    <li>dolor sit</li>
+                    <li>consectetur,</li>
+                    <li>Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-none">Primaire</button>
+            </div>
+            <div class="container__card--buy-description__standard container__card--buy-description__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37</h1>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Primaire</li>
+                    <li>dolor sit</li>
+                    <li>consectetur,</li>
+                    <li>Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-none">Primaire</button>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div class="container__card--simple-height-long">
+            <div class="container__card--simple-height-long__standard">
+                <img class="img img--card-simple-height-long" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p  class="description description--content-card-8">Lorem ipsum dolor </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-height-long__standard">
+                <img class="img img--card-simple-height-long" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p class="description description--content-card-8">Lorem ipsum dolor   </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-height-long__standard">
+                <img class="img img--card-simple-height-long" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p class="description description--content-card-8">Lorem ipsum dolor   </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--simple-height-long__standard">
+                <img class="img img--card-simple-height-long" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <h2 class="title title--header-card-8">Lorem  </h2>
+                <p class="description description--content-card-8">Lorem ipsum dolor   </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--big">
+            <div class="container__card--big__standard">
+                <img class="img img--card-big" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <p  class="description description--content-card-8">Lorem ipsum dolor </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+            <div class="container__card--big__standard">
+                <img class="img img--card-big" src="img/pexels-yankrukov-7698706.jpg" alt="">
+                <p class="description description--content-card-8">Lorem ipsum dolor   </p>
+                <i class="fa-solid fa-computer-mouse icons-img"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--buy-good">
+            <div class="container__card--buy-good__standard container__card--buy-good__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37/mois</h1>
+                <ul>
+                    <li> ✅ Lorem ipsum Lorem ipsum</li>
+                    <li> ✅ Primaire Primaire Primaire</li>
+                    <li> ✅ dolor sit Primaire</li>
+                    <li> ✅ consectetur, consectetur,</li>
+                    <li> ✅ Ab aliquid Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-b-black">Primaire</button>
+            </div>
+            <div class="container__card--buy-good__standard container__card--buy-good__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37/mois</h1>
+                <ul>
+                    <li> ✅ Lorem ipsum Lorem ipsum</li>
+                    <li> ✅ Primaire Primaire Primaire</li>
+                    <li> ✅ dolor sit Primaire</li>
+                    <li> ✅ consectetur, consectetur,</li>
+                    <li> ✅ Ab aliquid Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-w-full-blue">Primaire</button>
+            </div>
+            <div class="container__card--buy-good__standard container__card--buy-good__standard--2">
+                <p class="description description--content-card">Vendre</p>
+                <h1 class="title title-money">$37/mois</h1>
+                <ul>
+                    <li> ✅ Lorem ipsum Lorem ipsum</li>
+                    <li> ✅ Primaire Primaire Primaire</li>
+                    <li> ✅ dolor sit Primaire</li>
+                    <li> ✅ consectetur, consectetur,</li>
+                    <li> ✅ Ab aliquid Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-b-black">Primaire</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container__card--buy-simple">
+            <div class="container__card--buy-simple__standard container__card--buy-simple__standard--2">
+                <div class="container__card--buy-simple__standard-text">
+                    <h2> Title </h2>
+                    <h2> Title </h2>
+                </div>
+                <p class="description description--content-card-profils">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo  </p>
+                <ul>
+                    <li> ✅ Lorem ipsum Lorem ipsum</li>
+                    <li> ✅ Primaire Primaire Primaire</li>
+                    <li> ✅ dolor sit Primaire</li>
+                    <li> ✅ consectetur, consectetur,</li>
+                    <li> ✅ Ab aliquid Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-none">Primaire</button>
+            </div>
+            <div class="container__card--buy-simple__standard container__card--buy-simple__standard--1">
+                <div class="container__card--buy-simple__standard-text">
+                    <h2> Title </h2>
+                    <h2> Title </h2>
+                </div>
+                <p class="description description--content-card-profils">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo  </p>
+                <ul>
+                    <li> ✅ Lorem ipsum Lorem ipsum</li>
+                    <li> ✅ Primaire Primaire Primaire</li>
+                    <li> ✅ dolor sit Primaire</li>
+                    <li> ✅ consectetur, consectetur,</li>
+                    <li> ✅ Ab aliquid Ab aliquid</li>
+                </ul>
+                <button class="cta cta--buy-w-full-blue">Primaire</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

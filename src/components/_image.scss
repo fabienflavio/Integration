@@ -1,0 +1,101 @@
+.img{
+    &__vector-rigth{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        transform: translateX(-46.5rem);
+        @media screen and (max-width: 992px) {
+            &{
+                display: none;
+            }
+        }
+    }
+    &__vector-bottom{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        transform: translateY(-20.2rem);
+        @media screen and (max-width: 992px) {
+            &{
+                display: none;
+            }
+        }
+    }  
+    &--content{
+        position: absolute;
+        max-width: 48.5rem;        
+        height: 53.2rem;
+        z-index: -1;
+        
+    }
+    &--desert{
+        position: absolute;
+        width: 48.5rem;        
+        height: 53.6rem;
+        z-index: -1;
+    }
+    &--person-one{
+        width: 3rem;
+        height: 3rem;
+        border: white;
+        border-radius: 100%;
+        background-color: $color-white;
+    }
+    &--person-two{
+        position: absolute;
+        transform: translateX(-1rem);
+        width: 3rem;
+        height: 3rem;
+        border: white;
+        border-radius: 100%;
+        background-color: $color-white;
+        
+    }
+    &--person-three{
+        position: absolute;
+        transform: translateX(1rem);
+        width: 3rem;
+        height: 3rem;
+        border: white;
+        border-radius: 100%;
+        background-color: $color-white;
+    }
+    &--header-person{
+        width: 6rem;
+        height: 7.8rem;
+        border-radius: 8px;
+    }
+    &--card-normal{
+        height: 25.7rem;
+        width: 46rem ;
+    }
+    &--card-simple-normal{
+        height: 34.7rem;
+        width: 26.4rem ;
+    }
+    &--card-round{
+        height: 6rem;
+        width: 6rem ;
+        border-radius: 100%;
+    }
+    &--card-simple-content{
+        height: 30rem;
+        width: 36rem ;
+    }
+    &--card-simple-height{
+        height: 46.9rem;
+        width: 35.5rem ;
+    }
+    &--card-simple-height-long{
+        height: 46.9rem;
+        width:  26.4rem  ;
+    }
+    &--card-big{
+        height: 55rem ;
+        max-width:  55.8rem  ;
+    }
+}
+
+

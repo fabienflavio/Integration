@@ -1,0 +1,238 @@
+.container__card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+    &--normal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 8rem;
+        &__standard{
+            position: relative;
+            max-width: 46rem ;
+            
+        }
+    }
+    &--simple-normal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 8rem;
+        &__standard{
+            max-width: 26.4rem  ;
+            position: relative;
+        }
+    }
+    &--rounded-profils{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 8rem;
+        &__standard{
+            display: flex;
+            flex-direction: row;
+            max-width: 40.4rem  ;
+            gap: 2rem;
+            align-items: start;
+        }
+    }
+    &--buy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 8rem;
+        &__standard{
+            
+            max-width: 54.7rem  ;
+            gap: 2rem;
+            text-align: center;
+            padding: 8.8rem;
+            &--2{
+                background-color: var(--blue-primary);
+                color: var(--white);
+            }
+        }
+    }
+    &--simple-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &__standard{
+            max-width: 36rem  ;
+            position: relative;
+            &__content{
+                padding-left: 2rem;
+                border: .4rem solid var(--gray-2);
+            }
+        }
+    }
+    &--content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &__standard{          
+            max-width: 26.1rem  ;
+            gap: 2rem;
+            text-align: center;
+            padding: 3.6rem;
+            &--2{
+                background-color: var(--blue-primary);
+                color: var(--white);
+            }
+        }
+    }
+    &--content-profils{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &__standard{          
+            max-width: 35.5rem  ;
+            gap: 2rem;
+            text-align: center;
+            padding: 1.6rem;
+            &--2{
+                background-color: var(--blue-primary);
+                color: var(--white);
+            }
+            &__profils{
+                display: flex;
+                flex-direction: row;
+                max-width: 40.4rem  ;
+                gap: 1rem;
+                align-items: start;
+               padding-top: 2rem;
+            }
+        }
+    }
+    &--simple-height{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &__standard{
+            max-width: 35.5rem ;
+            position: relative;
+        }
+    }
+    &--buy-description{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 8rem;
+        background-color: var(--blue-primary);
+        &__standard{
+            border: .2rem solid var(--gray-2);
+            width: 35.5rem;
+            height: 53.3rem;
+            gap: 2rem;
+            text-align: center;
+            padding: 2rem 2.8rem ;
+            &--2{
+                background-color: var(--blue-primary);
+                color: var(--white);
+            }
+            ul{
+                list-style : none;
+                padding:  3rem 0 6rem 0;
+                line-height: 4rem;
+            }
+        }
+    }
+
+    &--simple-height-long{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &__standard{
+            max-width:  26.4rem  ;
+            position: relative;
+        }
+    }
+    &--big{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &__standard{
+            max-width: 55.8rem ;
+            position: relative;
+        }
+    }
+    &--buy-good{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        background-color: var(--white);
+        &__standard{
+            border: .2rem solid var(--gray-2);
+            width: 35.5rem;
+            height: 53.3rem;
+            gap: 2rem;
+            text-align: start;
+            padding: 2rem 2.8rem ;
+            &--2{
+                background-color: var(--white);
+                color: var(--black);
+            }
+            ul{
+                list-style : none;
+                padding:  3rem 0 6rem 0;
+                line-height: 4rem;
+                text-align: start;
+            }
+        }
+    }
+    &--buy-simple{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        background-color: var(--white);
+        &__standard{
+            border: .2rem solid var(--gray-2);
+            width: 35.5rem;
+            height: 53.3rem;
+            gap: 2rem;
+            text-align: start;
+            padding: 2rem 2.8rem ;
+            &--2{
+                background-color: var(--blue-primary);
+                color: var(--white);
+            }
+            ul{
+                list-style : none;
+                padding:  3rem 0 6rem 0;
+                line-height: 4rem;
+                text-align: start;
+            }
+            &-text{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 1rem;
+            }
+        }
+        
+
+    }
+    
+}

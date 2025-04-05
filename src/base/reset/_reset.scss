@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5% !important; /* Now 10px = 1rem! */
+}
+  
+body {
+    font-size: 16px !important; /* px fallback */
+    font-size: 1.6rem !important; /* default font-size for document */
+    line-height: 1.2 !important; /* a nice line-height */
+   
+}
+
+:root{
+    --black : black ;
+    --black-1 : rgb(53, 52, 52) ;
+    --gray-1 : rgb(136, 136, 136) ;
+    --gray-2 : rgb(238, 238, 238) ;
+    --white : white ;
+    --white-transparent :rgba(255, 255, 255, 0.473)
+    --yellow : #eeff73 ;
+    --blue-cyan- :  rgb(156, 224, 255) ;
+    --blue-cyan-dark :  rgb(0, 109, 160) ;
+    --blue-dark- :  rgb(0, 115, 168) ;
+    --blue-primary :  rgb(8, 70, 240) ;
+    --blue-primary-hover :  rgb(9, 56, 187) ;
+}

@@ -12040,7 +12040,7 @@ Dazy Exelle
 .hero.hero--home-dream {
   position: relative;
 }
-.hero.hero--home-dream::after {
+.hero.hero--home-dream.hero.hero--home-dream::after {
   position: absolute;
   content: "";
   left: 0;
@@ -12064,16 +12064,17 @@ Dazy Exelle
   padding-top: 12.5rem;
   z-index: 4;
 }
-@media screen and (max-width: 1220px) {
-  .hero.hero--home-dream .hero__content {
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+  .hero.hero--home-dream .hero__content .hero__content {
     position: relative;
     padding-left: 4rem;
     padding-top: 4rem;
     z-index: 4;
+    background: red;
   }
 }
-@media screen and (max-width: 575px) {
-  .hero.hero--home-dream .hero__content {
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  .hero.hero--home-dream .hero__content .hero__content {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -12093,22 +12094,22 @@ Dazy Exelle
   }
 }
 
-.layout.layout--home-dream {
+.layout.layout--dream {
   position: relative;
 }
-.layout.layout--home-dream::after {
+.layout.layout--dream .layout.layout--dream::after {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: rgb(54, 54, 54);
-  opacity: 0.8;
+  background-color: rgb(54, 54, 54);
+  opacity: 1;
   border-radius: 2.6rem;
   z-index: 2;
 }
-.layout.layout--home-dream .layout__img {
+.layout.layout--dream .layout__image {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -12116,15 +12117,39 @@ Dazy Exelle
      object-fit: cover;
   border-radius: 2.6rem;
 }
-.layout.layout--home-dream .layout__content {
+.layout.layout--dream .layout__vector-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  transform: translateX(-46.5rem);
+}
+@media screen and (max-width: 992px) {
+  .layout.layout--dream .layout__vector-right .layout__vector--right {
+    display: none;
+  }
+}
+.layout.layout--dream .layout__vector-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  transform: translateY(-20.2rem);
+}
+@media screen and (max-width: 992px) {
+  .layout.layout--dream .layout__vector-bottom .layout__vector--bottom {
+    display: none;
+  }
+}
+.layout.layout--dream .layout__content {
+  position: relative;
   padding-bottom: 21.4rem;
   padding-left: 12.5rem;
   padding-top: 22.2rem;
-  position: relative;
   z-index: 4;
 }
 @media screen and (max-width: 1200px) {
-  .layout.layout--home-dream .layout__content {
+  .layout.layout--dream .layout__content {
     position: relative;
     padding-left: 4rem;
     padding-top: 10.2rem;
@@ -12132,17 +12157,17 @@ Dazy Exelle
   }
 }
 @media screen and (max-width: 575px) {
-  .layout.layout--home-dream .layout__content {
+  .layout.layout--dream .layout__content {
     width: 100%;
     padding-left: 2rem;
     padding-top: 5.2rem;
   }
 }
-.layout.layout--home-dream .layout__container-btn {
+.layout.layout--dream .layout__buttons {
   padding-top: 3rem;
 }
 @media screen and (max-width: 575px) {
-  .layout.layout--home-dream .layout__container-btn {
+  .layout.layout--dream .layout__buttons {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -12930,7 +12955,7 @@ Dazy Exelle
   padding-top: 1rem;
 }
 
-.card {
+.card.card--container-content {
   position: absolute;
   width: 46.6rem;
   height: 20.3rem; /* **** */
@@ -12942,7 +12967,7 @@ Dazy Exelle
   text-transform: capitalize;
 }
 @media screen and (max-width: 991px) {
-  .card {
+  .card.card--container-content {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%) translateY(14rem);
@@ -12951,7 +12976,7 @@ Dazy Exelle
   }
 }
 @media screen and (max-width: 575px) {
-  .card {
+  .card.card--container-content {
     position: absolute;
     width: 30.6rem;
     height: 20.3rem; /* **** */
@@ -12964,20 +12989,20 @@ Dazy Exelle
     padding: 2.4rem;
   }
 }
-.card--subcriber {
+.card.card--container-content .card__stats {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 3rem;
   gap: 2rem;
 }
-.card--subcriber__content {
-  width: 100%;
-}
 @media screen and (max-width: 575px) {
-  .card--subcriber {
+  .card.card--container-content .card__stats {
     gap: 0.1rem;
   }
+}
+.card.card--container-content .card__stat {
+  width: 100%;
 }
 
 .img__vector-rigth {

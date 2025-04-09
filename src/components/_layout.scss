@@ -1,60 +1,91 @@
 .layout{
+    
+}
 
-    &.layout--home-dream{
-        position: relative;
-        &::after{
-            position: absolute;
-            content: "";
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-image:$color-black;
-            opacity: 0.8;
-            border-radius: 2.6rem;
-            z-index: 2;
-        }
-        .layout__img{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 2.6rem;
-        }
-        .layout__content{
-            padding-bottom: 21.4rem;
-            padding-left: 12.5rem;
-            padding-top: 22.2rem;
-            position: relative;
-            z-index: 4;
-            @media screen and (max-width: 1200px){
-                &{
-                    position: relative;
-                    padding-left: 4rem;
-                    padding-top: 10.2rem;
-                    z-index: 4;
-                }
-            }
-            @media screen and (max-width: 575px){
-                &{
-                    width: 100%;
-                    padding-left: 2rem;
-                    padding-top: 5.2rem;
-                }
-            }
-            
-        }
-        .layout__container-btn{
-            padding-top: 3rem;
-            @media screen and (max-width : 575px){
-                &{
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    gap: 2rem;
-                }
+.layout.layout--dream{
+    position: relative;
+    .layout.layout--dream::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:$color-black;
+        opacity: 1;
+        border-radius: 2.6rem;
+        z-index: 2;
+    }
+    
+    
+    .layout__image{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2.6rem;
+    }
+    
+    .layout__vector-right{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        transform: translateX(-46.5rem);
+        @media screen and (max-width: 992px) {
+            .layout__vector--right{
+                display: none;
             }
         }
     }
+    
+    .layout__vector-bottom{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        transform: translateY(-20.2rem);
+        @media screen and (max-width: 992px) {
+            .layout__vector--bottom{
+                display: none;
+            }
+        }
+    }
+    
+    .layout__content{
+        position: relative;
+        padding-bottom: 21.4rem;
+        padding-left: 12.5rem;
+        padding-top: 22.2rem;
+        z-index: 4;
+        @media screen and (max-width: 1200px){
+            &{
+                position: relative;
+                padding-left: 4rem;
+                padding-top: 10.2rem;
+                z-index: 4;
+            }
+        }
+        @media screen and (max-width: 575px){
+            &{
+                width: 100%;
+                padding-left: 2rem;
+                padding-top: 5.2rem;
+            }
+        }
+    }
+    
+    .layout__buttons{
+        padding-top: 3rem;
+        @media screen and (max-width : 575px){
+            &{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                gap: 2rem;
+            }
+        }
+    }
+    
 }
 

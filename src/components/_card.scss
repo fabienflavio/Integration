@@ -1,4 +1,8 @@
 .card{
+
+}
+
+.card.card--container-content{
     position: absolute;
     width: 46.6rem;
     height: 20.3rem; /* **** */
@@ -31,25 +35,23 @@
             padding: 2.4rem;
         }
     }
-
-    
-   &--subcriber{
+    .card__stats{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 3rem; 
-        
         gap: 2rem;
-        &__content{
-            width: 100%;
-            
-        }
         @media screen and (max-width: 575px) {
             &{       
                  gap: 0.1rem;
             }
          
-     }
-   }
-
+        }
+    }
+    
+    .card__stat{
+        width: 100%;
+    }
+    
 }
+

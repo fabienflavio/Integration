@@ -6,59 +6,40 @@
     <title>Integration </title>
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <style>
-            .box {
-                position: relative;
-                padding: 2rem 3rem;
-                display: inline-block;
-            }
-
-            .box::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                border-radius: 50px;
-                padding: 10px; /* control the border thickness */
-                background: linear-gradient(45deg, red, blue);
-                -webkit-mask: 
-                    linear-gradient(#fff 0 0) content-box, 
-                    linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                        mask-composite: exclude;
-                pointer-events: none;
-            }
-    </style>
 </head>
 <body>
     <!-- Layout -->
-    <div class="container">
-        <div class="layout layout--home-dream">
-            <img class="layout__img" src="img/nastygilrs-2347387_1280.jpg" alt="">
-            <img class="img img__vector-rigth" src="img/Path.png" alt="">
-            <img class="img img__vector-bottom" src="img/Path.png" alt="">
-            
+    <div class=" container">
+        <div class="layout layout--dream">
+            <img class="layout__image" src="img/nastygilrs-2347387_1280.jpg" alt="">
+            <img class="layout__vector-right" src="img/Path.png" alt="">
+            <img class="layout__vector-bottom" src="img/Path.png" alt="">
+
             <div class="layout__content">
-                <h1 class="title title--big-header">Find your dream home today</h1>
-                <p class="description description--big-header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repudiandae dolorum velit, hic similique minima facere magni itaque eligendi? Quibusdam </p>
-                <div class="layout__container-btn">
+                <h1 class="title title--big-header">Find your dream layout today</h1>
+                <p class="description description--big-header">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repudiandae dolorum velit, hic similique minima facere magni itaque eligendi? Quibusdam</p>
+
+                <div class="layout__buttons">
                     <button class="cta cta--simple">View</button>
                     <button class="cta cta--hover-reverse">learn More</button>
                 </div>
-                <div class="layout__content--card  card">  
-                    <h2 class="title title--nature">Who we are ?</h2>
-                    <p class="description description--nature"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde perferendis doloremque rerum exercitatio </p>
-                    <div class="card--subcriber">
-                        <div class="card--subcriber__content ">
+
+                <div class="card card--container-content">
+                    <h2 class="title title--nature">Who we are?</h2>
+                    <p class="description description--nature">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde perferendis doloremque rerum exercitatio</p>
+
+                    <div class="card__stats">
+                        <div class="card__stat">
                             <h3 class="title title--number">80+</h3>
-                            <p class="description description--number"> @termunate House</p>
+                            <p class="description description--number">@termunate House</p>
                         </div>
-                        <div class="card--subcriber__content ">
+                        <div class="card__stat">
                             <h3 class="title title--number">500+</h3>
-                            <p class="description description--number"> Agents House</p>
+                            <p class="description description--number">Agents House</p>
                         </div>
-                        <div class="card--subcriber__content ">
+                        <div class="card__stat">
                             <h3 class="title title--number">2K+</h3>
-                            <p class="description description--number"> Happy Clients</p>
+                            <p class="description description--number">Happy Clients</p>
                         </div>
                     </div>
                 </div>
@@ -66,12 +47,8 @@
         </div>
     </div>
 
-    <hr>
-    <br><br><br><br><br><br><br><br>
-    <hr>
-
     <!--  Hero  -->
-    <div >
+    <div class="container mt-5">
         <div class="hero hero--home-dream">
             <img class="hero__img" src="img/woman-working-call-center.jpg" alt="">
             <div class="hero__content">
@@ -85,12 +62,8 @@
         </div>
     </div>
 
-    <hr>
-    <br><br><br><br><br><br><br><br>
-    <hr>
-
     <!--  Cleaner  -->
-    <div class="cleaner cleaner--container">
+    <div class="cleaner cleaner--container mt-5">
         <div class="cleaner__content">
             <img class="img img--content" src="img/bg-yellow.png" alt="">
             <div class="cleaner__content-box">
@@ -662,6 +635,7 @@
             </div>
         </div>
     </div>
+
     
 </body>
 </html>

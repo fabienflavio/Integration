@@ -12273,42 +12273,6 @@ textarea.form-control-lg {
   transform: translateX(-1rem) translateY(-1.2rem);
 }
 
-.container__button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 8rem;
-  padding: 5rem 4rem;
-  width: 100%;
-}
-.container__button--shadow-yellow {
-  position: relative;
-  width: 16rem;
-  height: 5rem;
-}
-.container__button--double-border-solid {
-  position: relative;
-  width: 16rem;
-  height: 5rem;
-}
-.container__button--double-border-dashed {
-  position: relative;
-  width: 16rem;
-  height: 5rem;
-}
-.container__button--border-top-bottom-dashed {
-  position: relative;
-  width: 16rem;
-  height: 5rem;
-}
-.container__button--four-border-part {
-  position: relative;
-  width: 16rem;
-  height: 5rem;
-}
-
 .container__card {
   display: flex;
   flex-direction: column;
@@ -13143,6 +13107,42 @@ textarea.form-control-lg {
   border-radius: 100%;
   padding: 0.4rem;
   background-color: #eeff73;
+}
+
+.cta--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8rem;
+  padding: 5rem 4rem;
+  width: 100%;
+}
+.cta--container .cta__shadow-yellow {
+  position: relative;
+  width: 16rem;
+  height: 5rem;
+}
+.cta--container .cta__double-border-solid {
+  position: relative;
+  width: 16rem;
+  height: 5rem;
+}
+.cta--container .cta__double-border-dashed {
+  position: relative;
+  width: 16rem;
+  height: 5rem;
+}
+.cta--container .cta__border-top-bottom-dashed {
+  position: relative;
+  width: 16rem;
+  height: 5rem;
+}
+.cta--container .cta__four-border-part {
+  position: relative;
+  width: 16rem;
+  height: 5rem;
 }
 
 .cta.cta--bg-black {

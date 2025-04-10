@@ -2,6 +2,44 @@
 
 }
 
+.cta--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding: 5rem 4rem;
+    width: 100%;
+    .cta__shadow-yellow{
+        position: relative;
+        width: 16rem;
+        height: 5rem;
+    }
+    
+    .cta__double-border-solid{
+        position: relative;
+        width: 16rem;
+        height: 5rem;
+        
+    }
+    .cta__double-border-dashed{
+        position: relative;
+        width: 16rem;
+        height: 5rem;
+    }
+    .cta__border-top-bottom-dashed{
+        position: relative;
+        width: 16rem;
+        height: 5rem;
+    }
+    .cta__four-border-part{
+        position: relative;
+        width: 16rem;
+        height: 5rem;
+    }
+}
+
 .cta.cta--bg-black{
     display: flex;
     flex-direction: row;

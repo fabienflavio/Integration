@@ -1,520 +1,499 @@
-:root{
-    --black : black ;
-    --black-1 : rgb(58, 58, 58) ;
-    --gray-1 : rgb(136, 136, 136) ;
-    --white : white ;
-    --yellow : #eeff73 ;
-    --blue-cyan :  rgb(156, 224, 255) ;
-    --blue-cyan-dark :  rgb(0, 109, 160) ;
-    --blue-dark :  rgb(0, 115, 168) ;
+.cta{
+
 }
 
-.cta{
-    
-    &--bg-black{
-        display: flex;
-        flex-direction: row;
-        padding: 1.2rem 3rem;
-        gap: 1rem;
-        border-radius:3.2rem ;
-        padding-right: .5rem;
-        font-size: 1.4rem;
+.cta.cta--bg-black{
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem 3rem;
+    gap: 1rem;
+    border-radius:3.2rem ;
+    padding-right: .5rem;
+    font-size: 1.4rem;
+    background-color: var(--black);
+    color : var(--white);
+    .cta__icons{
+        padding: 0 1rem;
+    }
+    &:hover{
+        transition: all .5s;
+        background-color: var(--black-1);
+    }
+    &:hover &-icons{
+        transition: all .5s;
+        transform: translateX(.5rem);
+    }
+}
+
+.cta.cta--shadow-yellow{
+    position: absolute;
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+    color : var(--black);
+    z-index: 10;
+    background-color: transparent;
+    .cta--shadow-yellow-back{
+        position: absolute;
+        width: 14rem;
+        height: 4.4rem;
+        background-color: var(--yellow);
+        z-index: 5;
+        transform: translateX(.6rem) translateY(.6rem);
+        
+    }
+    &:hover ~ &-back{
+        transition:  all .5s;
+        transform: translateX(.1rem) translateY(.1rem);
+    }
+}
+
+.cta.cta--double-border-solid{
+    position: absolute;
+    background-color: var(--white);
+    padding: 1.2rem 3rem;
+    border: .1rem var(--gray-1) solid;
+    cursor: pointer !important;
+    .cta--double-border-solid-back{
+        position: absolute;
+        width: 15.9rem;
+        height: 5.5rem;
+        border: .2rem var(--black) solid;
+        z-index: -5;
+        transform: translateX(-0.4rem) translateY(-0.5rem);
+    }
+    &:hover ~ &-back{
+        width: 14.9rem;
+        height: 4.5rem;
+        transition: all .5s;
+        transform: translateX(0rem) translateY(0rem);
+
+    }
+}
+
+.cta.cta--double-border-dashed{
+    position: absolute;
+    background-color: var(--white);
+    padding: 1.2rem 3rem;
+    border: .2rem var(--black) solid;
+    cursor: pointer !important;
+    .cta--double-border-dashed-back{
+        position: absolute;
+        width: 15rem;
+        height: 4.5rem;
+        border: .3rem var(--yellow) dashed;
+        transform: translateX(.5rem) translateY(.5rem);
+        z-index: -1;
+    }
+    &:hover ~ &-back{
+
+        width: 14.9rem;
+        height: 4.5rem;
+        transition: all .5s;
+        transform: translateX(0rem) translateY(0rem);
+
+    }
+}
+
+.cta.cta--border-dashed{
+    background-color: var(--white);
+    padding: .6rem .8rem .6rem 3rem;
+    border: .2rem var(--black) dashed;
+   
+    .cta--border-dashed-icons{
+        padding: .8rem;
+    }
+    &:hover{
+        transition: all .5s;
+        transform:  scale(1.04);
+    }
+    &:hover &-icons{
+        transition: all .5s;
+        transform: translateX(.5rem);
+    }
+}
+
+.cta.cta--box-shadow{
+    background-color: var(--white);
+    padding: 1rem 3rem 1rem 3rem;
+    border: .2rem var(--black) solid;
+    box-shadow: .2rem .2rem .1rem var(--black);
+    .cta--box-shadow-contanier{
+        position: absolute;
+        background-color: var(--black);
+        border-radius: 100%;
+        padding:  .1rem .8rem;
+        transform: translateX(2rem);   
+    }
+    .cta--box-shadow-icons{
+            color: var(--white);
+            font-size: 1.2rem;
+            padding-bottom: .4rem;
+        }
+    &:hover{
+        transition: all .5s;
+        box-shadow: 0rem 0rem 0rem var(--black);
+    }
+
+    &:hover &_contanier{
+        transition: all .5s;
+        transform: scale(1.1) translateX(1.7rem);        }
+}
+
+.cta.cta--arrow{
+    background-color: var(--white);
+    padding: 1rem 3rem 1rem 3rem;
+    border: .2rem var(--black) solid;
+    .cta--arrow-container{
+        position: absolute;
+        border-radius: 100%;
+        padding:  .1rem .5rem;
+        transform: translateX(20px);
+    }
+    .cta--arrow-container-icons{
+        font-size: 1.6rem;
+        padding-bottom: .4rem;
+        
+    }
+    &:hover &-container-icons{
+            transform: rotate(360deg) translateX(.5rem) ;
+            transition: all .5s;
+    }
+}
+
+.cta.cta--border-top-bottom-dashed{
+    position: absolute;
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+    color : var(--white);
+    z-index: 10;
+    background-color: transparent;
+    border-top: dotted .2rem var(--white);
+    border-bottom: dotted .2rem var(--white);
+    border-left: dotted 0rem var(--white);
+    border-right: dotted 0rem var(--white);
+    &:hover .cta--border-top-bottom-dashed-back{
+        transform: translateX(.8rem) translateY(.8rem);
+    }
+    .cta--border-top-bottom-dashed-back{
+        position: absolute;
+        width: 14.2rem;
+        height: 5.3rem;
+        background-color: var(--black);
+        z-index: 5;
+        transform:  translateY(-0.4rem);
+        
+    }
+    &:hover {
+        transition: all .5s;
+        background-color: var(--white);
+        border-top: dotted .2rem var(--black);
+        border-bottom: dotted .2rem var(--black);
+        color: var(--black);     
+
+    }
+    &:hover ~ .cta--border-top-bottom-dashed-back {
+        background-color: var(--white);
+        border: .5rem solid var(--white);
+        transition: all .5s;
+    }
+}
+
+.cta.cta--simple-shadow{
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem 3rem;
+    gap: 1rem;
+    border: 0;
+    border-radius:3.2rem ;
+    font-size: 1.4rem;
+    background-color: var(--white);
+    box-shadow: .3rem .3rem .4rem var(--gray-1);
+    color : var(--black);
+    &:hover{
+        transition: all .5s;
         background-color: var(--black);
         color : var(--white);
-        &-icons{
-            padding: 0 1rem;
-        }
-        &:hover{
-            transition: all .5s;
-            background-color: var(--black-1);
-        }
-        &:hover &-icons{
-            transition: all .5s;
-            transform: translateX(.5rem);
-        }
+        box-shadow: .3rem .3rem .4rem var(--gray-2);
     }
-
-    &--shadow-yellow{
-        position: absolute;
-        padding: 1.2rem 3rem;
-        font-size: 1.4rem;
-        color : var(--black);
-        z-index: 10;
-        background-color: transparent;
-        &-back{
-            position: absolute;
-            width: 14rem;
-            height: 4.4rem;
-            background-color: var(--yellow);
-            z-index: 5;
-            transform: translateX(.6rem) translateY(.6rem);
-            
-        }
-        &:hover ~ &-back{
-            transition:  all .5s;
-            transform: translateX(.1rem) translateY(.1rem);
-        }
-    }
-
-    &--double-border-solid{
-        position: absolute;
-        background-color: var(--white);
-        padding: 1.2rem 3rem;
-        border: .1rem var(--gray-1) solid;
-        cursor: pointer !important;
-        &-back{
-            position: absolute;
-            width: 15.9rem;
-            height: 5.5rem;
-            border: .2rem var(--black) solid;
-            z-index: -5;
-            transform: translateX(-0.4rem) translateY(-0.5rem);
-        }
-        &:hover ~ &-back{
-            width: 14.9rem;
-            height: 4.5rem;
-            transition: all .5s;
-            transform: translateX(0rem) translateY(0rem);
-
-        }
-    }
-
-    &--double-border-dashed{
-        position: absolute;
-        background-color: var(--white);
-        padding: 1.2rem 3rem;
-        border: .2rem var(--black) solid;
-        cursor: pointer !important;
-        &-back{
-            position: absolute;
-            width: 15rem;
-            height: 4.5rem;
-            border: .3rem var(--yellow) dashed;
-            transform: translateX(.5rem) translateY(.5rem);
-            z-index: -1;
-        }
-        &:hover ~ &-back{
-
-            width: 14.9rem;
-            height: 4.5rem;
-            transition: all .5s;
-            transform: translateX(0rem) translateY(0rem);
-
-        }
-    }
-
-    &--border-dashed{
-        background-color: var(--white);
-        padding: .6rem .8rem .6rem 3rem;
-        border: .2rem var(--black) dashed;
-       
-        &-icons{
-            padding: .8rem;
-        }
-        &:hover{
-            transition: all .5s;
-            transform:  scale(1.04);
-        }
-        &:hover &-icons{
-            transition: all .5s;
-            transform: translateX(.5rem);
-        }
-    }
-
-    &--box-shadow{
-        background-color: var(--white);
-        padding: 1rem 3rem 1rem 3rem;
-        border: .2rem var(--black) solid;
-        box-shadow: .2rem .2rem .1rem var(--black);
-        &_contanier{
-            position: absolute;
-            background-color: var(--black);
-            border-radius: 100%;
-            padding:  .1rem .8rem;
-            transform: translateX(2rem);
-            &-icons{
-                color: var(--white);
-                font-size: 1.2rem;
-                padding-bottom: .4rem;
-            }
-        }
-        &:hover{
-            transition: all .5s;
-            box-shadow: 0rem 0rem 0rem var(--black);
-        }
-
-        &:hover &_contanier{
-            transition: all .5s;
-            transform: scale(1.1) translateX(1.7rem);        }
-    }
-
-    &--arrow{
-        background-color: var(--white);
-        padding: 1rem 3rem 1rem 3rem;
-        border: .2rem var(--black) solid;
-        &-container{
-            position: absolute;
-            border-radius: 100%;
-            padding:  .1rem .5rem;
-            transform: translateX(20px);
-            
-            &-icons{
-                font-size: 1.6rem;
-                padding-bottom: .4rem;
-                
-            }
-        }
-        &:hover &-container-icons{
-                transform: rotate(360deg) translateX(.5rem) ;
-                transition: all .5s;
-        }
-    }
-
-    &--border-top-bottom-dashed{
-        position: absolute;
-        padding: 1.2rem 3rem;
-        font-size: 1.4rem;
-        color : var(--white);
-        z-index: 10;
-        background-color: transparent;
-        border-top: dotted .2rem var(--white);
-        border-bottom: dotted .2rem var(--white);
-        border-left: dotted 0rem var(--white);
-        border-right: dotted 0rem var(--white);
-        &:hover &-back{
-            transform: translateX(.8rem) translateY(.8rem);
-        }
-        &-back{
-            position: absolute;
-            width: 14.2rem;
-            height: 5.3rem;
-            background-color: var(--black);
-            z-index: 5;
-            transform:  translateY(-0.4rem);
-            
-        }
-
-        &:hover {
-            transition: all .5s;
-            background-color: var(--white);
-            border-top: dotted .2rem var(--black);
-            border-bottom: dotted .2rem var(--black);
-            color: var(--black);     
-
-        }
-        &:hover ~ &-back {
-            background-color: var(--white);
-            border: .5rem solid var(--white);
-            transition: all .5s;
-
-   
-        }
-    }
-
-    &--simple-shadow{
-        display: flex;
-        flex-direction: row;
-        padding: 1.2rem 3rem;
-        gap: 1rem;
-        border: 0;
-        border-radius:3.2rem ;
-        font-size: 1.4rem;
-        background-color: var(--white);
-        box-shadow: .3rem .3rem .4rem var(--gray-1);
-        color : var(--black);
-        &:hover{
-            transition: all .5s;
-            background-color: var(--black);
-            color : var(--white);
-            box-shadow: .3rem .3rem .4rem var(--gray-2);
-        }
-    }
-
-
-    &--border-top-bottom{
-        background-color: var(--white);
-        padding: .6rem .8rem .6rem 3rem;
-        border-left:0 ;
-        border-right:0 ;
-        border-bottom: .2rem var(--black) solid;
-        border-top: .2rem var(--black) solid;
-        &-icons{
-            padding: .8rem;
-        }
-        &:hover &-icons{
-            transform: translateX(.5rem);
-            transition: all .5s;
-        }
-    }
-
-
-    &--four-border-part{
-        display: flex;
-        flex-direction: row;
-        padding: 1.5rem 3rem;
-        gap: 1rem;
-        border: 0 ;
-        font-size: 1.4rem;
-        color : var(--black);
-        cursor: pointer;
-        background-color:  var(--gray);
-       &--border-one{
-        
-            position: absolute;
-            border-top:.2rem solid  var(--black) ;
-            width: 10rem;
-            height: .2rem;
-            padding: 0rem;
-            cursor: pointer;
-            transform:  translateX(-1rem) translateY(-4.5rem);
-        }
-
-       &--border-two{
-            position: absolute;
-            border-bottom:.2rem solid  var(--black) ;
-            width: 4rem;
-            height: .2rem;
-            padding: 0rem;
-            cursor: pointer;
-            transform: rotate(90deg) translateX(-3.5rem) translateY(2rem);
-        }
-
-       &--border-three{
-        
-            position: absolute;
-            border-top:.2rem solid  var(--black) ;
-            width: 4rem;
-            height: .2rem;
-            padding: 0rem;
-            cursor: pointer;
-            right: 0;
-            transform: rotate(90deg) translateX(-1.2rem) translateY(.2rem);
-        }
-
-       &--border-four{
-        
-            position: absolute;
-            border-top:.2rem solid  var(--black) ;
-            width: 10rem;
-            height: .2rem;
-            padding: 0rem;
-            cursor: pointer;
-            right: 0;
-            transform:  translateX(-1.5rem);
-        }
-
-        &:hover ~ &--border-one{
-            transform:  translateX(0rem) translateY(-4.5rem);
-            transition: all .5s;
-
-        }
-        &:hover ~ &--border-two{
-            transform: rotate(90deg) translateX(-2.6rem) translateY(2rem);
-            transition: all .5s;
-           
-        }
-        &:hover ~ &--border-three{
-            transform: rotate(90deg) translateX(-1.9rem) translateY(.2rem);
-            transition: all .5s;
-
-        }
-        &:hover ~ &--border-four{
-            transform:  translateX(-2.1rem);
-            transition: all .5s;
-
-        }
-    }
-
-    &--border-slash{
-        background-color: var(--white);
-        padding: 1rem 3rem 1rem 3rem;
-        border: .2rem var(--black) solid;
-        &--border-one{
-            position: absolute;
-            border-top:.2rem solid  var(--black) ;
-            width: 4rem;
-            height: 2rem;
-            padding: 2rem;
-            transform: rotate(135deg) translateY(14.6rem) translateX(10.8rem);
-            background-color: var(--white) ;
-            z-index: 5;
-
-        }
-       &--border-two{
-            position: absolute;
-            border-bottom:.2rem solid  var(--black) ;
-            width: 3rem;
-            height: .2rem;
-            padding: 2rem;
-            transform: rotate(135deg) translateX(3rem) translateY(-0.8rem);
-            background-color: var(--white);
-            z-index: 5;
-        }
-         &:hover ~ &--border-one{
-            transform: rotate(90deg) translateY(19rem) translateX(.0rem);
-            transition: all .5s;
-            background-color: transparent;
-
-        }
-        &:hover ~ &--border-two{
-            transform: rotate(90deg) translateX(.0rem) translateY(-.0rem);
-            transition: all .5s;
-            background-color: transparent;
-        }
-    }
-
-    &--icons-priority{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: .2rem 2rem .2rem .4rem;
-        gap: 1rem;
-        border-radius:3.2rem ;
-        font-size: 1.4rem;
-        background-color: var(--white);
-        color : var(--black);
-        &-icons{
-            padding: 1.2rem 1.4rem;
-            border-radius: 100%;
-            background-color: var(--black);
-            color: var(--white);
-        }
-        
-        &:hover &-icons{
-            transform: translateX(.5rem);
-            transition: all .5s;
-        }
-    }
-
-    
-
-    &--bg-linear-gradient{
-        padding: 1.2rem 3rem ;
-        border-radius:3.2rem ;
-        font-size: 1.4rem;
-        border: 0;
-        color : var(--white);
-        background-image: linear-gradient(to right , var(--blue-cyan-) ,  var(--blue-dark-) );
-        &:hover{
-            transform: scale(1.1);
-            transition: all .5s;
-        }
-    }
-
-    &--border-linear-gradient-border-text {
-        position: relative;
-        padding: 1.2rem 3rem;
-        display: inline-block;
-        border-radius: 50px;
-        overflow: hidden; 
-        cursor: pointer;
-        &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          border-radius: 5rem;
-          padding: .3rem; 
-          background: linear-gradient(45deg, var(--blue-cyan), var(--blue-cyan-dark));
-          -webkit-mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-          -webkit-mask-composite: xor;
-                  mask-composite: exclude;
-          pointer-events: pointer;
-          z-index: 0;
-        }
-    
-        &--content {
-          position: relative;
-          z-index: 1;
-          background: linear-gradient(90deg, var(--blue-cyan), var(--blue-cyan-dark));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        &:hover{
-            transform: scale(1.1);
-            transition: all .5s;
-        }
-    }
-
-    &--border-bottom-icons{
-        border: 0;
-        background-color: var(--white);
-        padding: 1rem 4rem 1rem 1rem;
-        border-bottom: .2rem var(--black) solid;
-        &-container{
-            position: absolute;
-            border: .2rem solid var(--black);
-            border-radius: 100%;
-            padding:  .1rem .8rem;
-            transform: translateX(1rem)  translateY(-.5rem);
-            background-color: var(--yellow);
-            &-icons{
-                color: var(--black);
-                font-size: 1.2rem;
-                padding-bottom: .4rem;
-            }
-        }
-        &:hover &-container{
-            transform: translateX(1.5rem)  translateY(-.5rem);
-            transition: all .5s;
-        }
-    }
-
-    
-    &--cercle-back{
-        position: relative;
-        background-color: var(--white);
-        padding: 1rem 1.8rem 1.4rem 1rem;
-        background-color: white;
-        border: 0;
-        z-index: 4;
-        &-angle-right{
-            position: absolute;
-            font-size: 3rem;
-            z-index: -1;
-            top: 0;
-            transform: translateX(2rem) translateY(.4rem);
-        }
-        &-circle-notch{
-            position: absolute;
-            font-size: 6rem;
-            z-index: -2;
-            transform: rotate(-90deg) translateX(2rem) translateY(-2rem);        
-        }
-
-        &:hover &-angle-right {
-            transition: all .5s;
-            transform: translateX(3.5rem) translateY(.4rem);
-        }
-    }
-
-     &--dot-arrow{
-        background-color: var(--white);
-        padding: .6rem .8rem .6rem 3rem;
-        border:0 ;
-
-        &--arrow{
-            padding: .8rem;
-        }
-        &-dot{
-            position: absolute;
-            transform: translateX(-2rem) translateY(1.3rem);
-            border-radius: 100%;
-            width: 1rem;
-            height:  1rem;
-            padding: .2rem;
-            background-image: linear-gradient(to right , var(--blue-cyan-) ,  var(--blue-dark-) );
-        }
-        &:hover &--arrow {
-            transition: all .5s;
-            transform: translateX(.5rem);
-        }
-        &:hover &-dot {
-            transition: all .5s;
-            transform: scale(1.8) translateX(-1.5rem) translateY(.6rem);
-        }
-    }
-
 }
 
+.cta.cta--border-top-bottom{
+    background-color: var(--white);
+    padding: .6rem .8rem .6rem 3rem;
+    border-left:0 ;
+    border-right:0 ;
+    border-bottom: .2rem var(--black) solid;
+    border-top: .2rem var(--black) solid;
+    &-icons{
+        padding: .8rem;
+    }
+    &:hover &-icons{
+        transform: translateX(.5rem);
+        transition: all .5s;
+    }
+}
+
+.cta.cta--four-border-part{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 3rem;
+    gap: 1rem;
+    border: 0 ;
+    font-size: 1.4rem;
+    color : var(--black);
+    cursor: pointer;
+    background-color:  var(--gray);
+    .cta--four-border-part-border-one{
+    
+        position: absolute;
+        border-top:.2rem solid  var(--black) ;
+        width: 10rem;
+        height: .2rem;
+        padding: 0rem;
+        cursor: pointer;
+        transform:  translateX(-1rem) translateY(-4.5rem);
+    }
+
+    .cta--four-border-part-border-two{
+        position: absolute;
+        border-bottom:.2rem solid  var(--black) ;
+        width: 4rem;
+        height: .2rem;
+        padding: 0rem;
+        cursor: pointer;
+        transform: rotate(90deg) translateX(-3.5rem) translateY(2rem);
+    }
+
+   .cta--four-border-part-border-three{
+    
+        position: absolute;
+        border-top:.2rem solid  var(--black) ;
+        width: 4rem;
+        height: .2rem;
+        padding: 0rem;
+        cursor: pointer;
+        right: 0;
+        transform: rotate(90deg) translateX(-1.2rem) translateY(.2rem);
+    }
+
+   .cta--four-border-part-border-four{
+    
+        position: absolute;
+        border-top:.2rem solid  var(--black) ;
+        width: 10rem;
+        height: .2rem;
+        padding: 0rem;
+        cursor: pointer;
+        right: 0;
+        transform:  translateX(-1.5rem);
+    }
+
+    &:hover ~ .cta--four-border-part-border-one{
+        transform:  translateX(0rem) translateY(-4.5rem);
+        transition: all .5s;
+
+    }
+    &:hover ~ .cta--four-border-part-border-two{
+        transform: rotate(90deg) translateX(-2.6rem) translateY(2rem);
+        transition: all .5s;
+       
+    }
+    &:hover ~ .cta--four-border-part-border-three{
+        transform: rotate(90deg) translateX(-1.9rem) translateY(.2rem);
+        transition: all .5s;
+
+    }
+    &:hover ~ .cta--four-border-part-border-four{
+        transform:  translateX(-2.1rem);
+        transition: all .5s;
+
+    }
+}
+
+.cta.cta--border-slash{
+    background-color: var(--white);
+    padding: 1rem 3rem 1rem 3rem;
+    border: .2rem var(--black) solid;
+    .cta--border-slash-border-one{
+        position: absolute;
+        border-top:.2rem solid  var(--black) ;
+        width: 4rem;
+        height: 2rem;
+        padding: 2rem;
+        transform: rotate(135deg) translateY(14.6rem) translateX(10.8rem);
+        background-color: var(--white) ;
+        z-index: 5;
+
+    }
+    .cta--border-slash-border-two{
+        position: absolute;
+        border-bottom:.2rem solid  var(--black) ;
+        width: 3rem;
+        height: .2rem;
+        padding: 2rem;
+        transform: rotate(135deg) translateX(3rem) translateY(-0.8rem);
+        background-color: var(--white);
+        z-index: 5;
+    }
+     &:hover ~ .cta--border-slash-border-one{
+        transform: rotate(90deg) translateY(19rem) translateX(.0rem);
+        transition: all .5s;
+        background-color: transparent;
+
+    }
+    &:hover ~ .cta--border-slash-border-two{
+        transform: rotate(90deg) translateX(.0rem) translateY(-.0rem);
+        transition: all .5s;
+        background-color: transparent;
+    }
+}
+
+.cta.cta--icons-priority{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .2rem 2rem .2rem .4rem;
+    gap: 1rem;
+    border-radius:3.2rem ;
+    font-size: 1.4rem;
+    background-color: var(--white);
+    color : var(--black);
+    .cta--icons-priority-icons{
+        padding: 1.2rem 1.4rem;
+        border-radius: 100%;
+        background-color: var(--black);
+        color: var(--white);
+    }
+    
+    &:hover .cta--icons-priority-icons{
+        transform: translateX(.5rem);
+        transition: all .5s;
+    }
+}
+
+.cta.cta--bg-linear-gradient{
+    padding: 1.2rem 3rem ;
+    border-radius:3.2rem ;
+    font-size: 1.4rem;
+    border: 0;
+    color : var(--white);
+    background-image: linear-gradient(to right , var(--blue-cyan-) ,  var(--blue-dark-) );
+    &:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+}
+
+.cta.cta--border-linear-gradient-border-text {
+    position: relative;
+    padding: 1.2rem 3rem;
+    display: inline-block;
+    border-radius: 50px;
+    overflow: hidden; 
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 5rem;
+      padding: .3rem; 
+      background: linear-gradient(45deg, var(--blue-cyan), var(--blue-cyan-dark));
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: pointer;
+      z-index: 0;
+    }
+
+    .cta--border-linear-gradient-border-text-content {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(90deg, var(--blue-cyan), var(--blue-cyan-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+}
+
+.cta.cta--border-bottom-icons{
+    border: 0;
+    background-color: var(--white);
+    padding: 1rem 4rem 1rem 1rem;
+    border-bottom: .2rem var(--black) solid;
+    .cta--border-bottom-icons-container{
+        position: absolute;
+        border: .2rem solid var(--black);
+        border-radius: 100%;
+        padding:  .1rem .8rem;
+        transform: translateX(1rem)  translateY(-.5rem);
+        background-color: var(--yellow);   
+    }
+    .cta--border-bottom-icons-container-icons{
+        color: var(--black);
+        font-size: 1.2rem;
+        padding-bottom: .4rem;
+    }
+    &:hover .cta--border-bottom-icons-container{
+        transform: translateX(1.5rem)  translateY(-.5rem);
+        transition: all .5s;
+    }
+}
+
+.cta.cta--cercle-back{
+    position: relative;
+    background-color: var(--white);
+    padding: 1rem 1.8rem 1.4rem 1rem;
+    background-color: white;
+    border: 0;
+    z-index: 4;
+    .cta--cercle-back-angle-right{
+        position: absolute;
+        font-size: 3rem;
+        z-index: -1;
+        top: 0;
+        transform: translateX(2rem) translateY(.4rem);
+    }
+    .cta--cercle-back-circle-notch{
+        position: absolute;
+        font-size: 6rem;
+        z-index: -2;
+        transform: rotate(-90deg) translateX(2rem) translateY(-2rem);        
+    }
+
+    &:hover .cta--cercle-back-angle-right {
+        transition: all .5s;
+        transform: translateX(3.5rem) translateY(.4rem);
+    }
+}
+
+.cta.cta--dot-arrow{
+    background-color: var(--white);
+    padding: .6rem .8rem .6rem 3rem;
+    border:0 ;
+
+    .cta--dot-arrow--arrow{
+        padding: .8rem;
+    }
+    .cta--dot-arrow-dot{
+        position: absolute;
+        transform: translateX(-2rem) translateY(1.3rem);
+        border-radius: 100%;
+        width: 1rem;
+        height:  1rem;
+        padding: .2rem;
+        background-image: linear-gradient(to right , var(--blue-cyan-) ,  var(--blue-dark-) );
+    }
+    &:hover .cta--dot-arrow--arrow {
+        transition: all .5s;
+        transform: translateX(.5rem);
+    }
+    &:hover .cta--dot-arrow-dot {
+        transition: all .5s;
+        transform: scale(1.8) translateX(-1.5rem) translateY(.6rem);
+    }
+}

@@ -33,7 +33,7 @@
         z-index: 5;
         transform: translateX(-46.5rem);
         @media screen and (max-width: 992px) {
-            .layout__vector--right{
+            &{
                 display: none;
             }
         }
@@ -46,7 +46,7 @@
         z-index: 5;
         transform: translateY(-20.2rem);
         @media screen and (max-width: 992px) {
-            .layout__vector--bottom{
+            &{
                 display: none;
             }
         }
@@ -88,4 +88,3 @@
     }
     
 }
-

@@ -25,23 +25,18 @@
         padding-left: 12.5rem;
         padding-top: 12.5rem;
         z-index: 4;
-        @media screen and (min-width : 768px) and (max-width :  1220px) {
-            .hero__content{
+        @media screen and  (max-width : 1220px) {
+            &{
                 position: relative;
                 padding-left: 4rem;
                 padding-top: 4rem;
                 z-index: 4;
-                background: red;
             }
         }
-        @media screen and  (min-width: 575px) and (max-width: 768px){
-            .hero__content{
-                display: flex;
-                flex-direction: row;
-                gap: 2rem;
+        @media screen and (max-width : 575px){
+            &{
                 padding-left: 0rem;
                 padding-top: 3rem;
-                
             }
         }
     }
@@ -58,3 +53,4 @@
         }
     }
 }
+

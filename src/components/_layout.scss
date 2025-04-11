@@ -145,3 +145,57 @@
     gap: 2rem;
 
 }
+
+.layout.layout--simple-height{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.layout.layout--buy-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.layout.layout--card-simple-height-long{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+    
+.layout.layout--card-big{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.layout.layout--card-buy-good{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--white);
+   
+}
+
+.layout.layout--card-buy-simple{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--white);
+  
+    
+
+}

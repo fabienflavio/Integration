@@ -125,3 +125,110 @@
     }
 }
 
+.card.card--simple-height{
+    max-width: 35.5rem ;
+    position: relative;
+}
+
+.card.card--buy-description{
+    border: .2rem solid var(--gray-2);
+    width: 35.5rem;
+    height: 53.3rem;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem 2.8rem ;
+    .card__list{
+        list-style : none;
+        padding:  1rem 0 2rem 0;
+        line-height: 4rem;
+    }
+}
+
+.card.card--buy-description-none{
+    border: .2rem solid var(--gray-2);
+    width: 35.5rem;
+    height: 53.3rem;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem 2.8rem ;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    
+    .card__list{
+        list-style : none;
+        padding:  1rem 0 2rem 0;
+        line-height: 4rem;
+    }
+}
+
+.card.card--simple-height-long{
+    max-width:  26.4rem  ;
+    position: relative;
+}
+
+.card.card--big{
+    max-width: 55.8rem ;
+    position: relative;
+}
+
+.card.card--buy-good{
+    border: .2rem solid var(--gray-2);
+    width: 35.5rem;
+    height: 53.3rem;
+    gap: 2rem;
+    text-align: start;
+    padding: 2rem 2.8rem ;
+    background-color: var(--white);
+    color: var(--black);
+    .card__list{
+        list-style : none;
+        padding:  1rem 0 2rem 0;
+        line-height: 4rem;
+        text-align: start;
+    }
+}
+
+.card.card--buy-simple{
+    border: .2rem solid var(--gray-2);
+    width: 35.5rem;
+    height: 53.3rem;
+    gap: 2rem;
+    text-align: start;
+    padding: 2rem 2.8rem ;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    .card__list{
+        list-style : none;
+        padding:  1rem 0 2rem 0;
+        line-height: 4rem;
+        text-align: start;
+    }
+    .card__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+}
+
+.card.card--buy-color{
+    border: .2rem solid var(--gray-2);
+    width: 35.5rem;
+    height: 53.3rem;
+    gap: 2rem;
+    text-align: start;
+    padding: 2rem 2.8rem ;
+  
+    .card__list{
+        list-style : none;
+        padding:  1rem 0 2rem 0;
+        line-height: 4rem;
+        text-align: start;
+    }
+    .card__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+}

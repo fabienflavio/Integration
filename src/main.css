@@ -12042,6 +12042,7 @@ textarea.form-control-lg {
   .hero.hero--home-dream .hero__content {
     padding-left: 0rem;
     padding-top: 3rem;
+    text-align: center;
   }
 }
 .hero.hero--home-dream .hero__container-btn {
@@ -12053,6 +12054,8 @@ textarea.form-control-lg {
 @media screen and (max-width: 575px) {
   .hero.hero--home-dream .hero__container-btn {
     padding-top: 2rem;
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -12191,6 +12194,56 @@ textarea.form-control-lg {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.layout.layout--simple-height {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.layout.layout--buy-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.layout.layout--card-simple-height-long {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.layout.layout--card-big {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.layout.layout--card-buy-good {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: var(--white);
+}
+
+.layout.layout--card-buy-simple {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: var(--white);
 }
 
 .cleaner.cleaner--container {
@@ -12332,123 +12385,7 @@ textarea.form-control-lg {
 .container__card {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
-}
-.container__card--simple-height {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.container__card--simple-height__standard {
-  max-width: 35.5rem;
-  position: relative;
-}
-.container__card--buy-description {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   gap: 8rem;
-  background-color: var(--blue-primary);
-}
-.container__card--buy-description__standard {
-  border: 0.2rem solid var(--gray-2);
-  width: 35.5rem;
-  height: 53.3rem;
-  gap: 2rem;
-  text-align: center;
-  padding: 2rem 2.8rem;
-}
-.container__card--buy-description__standard--2 {
-  background-color: var(--blue-primary);
-  color: var(--white);
-}
-.container__card--buy-description__standard ul {
-  list-style: none;
-  padding: 3rem 0 6rem 0;
-  line-height: 4rem;
-}
-.container__card--simple-height-long {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.container__card--simple-height-long__standard {
-  max-width: 26.4rem;
-  position: relative;
-}
-.container__card--big {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.container__card--big__standard {
-  max-width: 55.8rem;
-  position: relative;
-}
-.container__card--buy-good {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  background-color: var(--white);
-}
-.container__card--buy-good__standard {
-  border: 0.2rem solid var(--gray-2);
-  width: 35.5rem;
-  height: 53.3rem;
-  gap: 2rem;
-  text-align: start;
-  padding: 2rem 2.8rem;
-}
-.container__card--buy-good__standard--2 {
-  background-color: var(--white);
-  color: var(--black);
-}
-.container__card--buy-good__standard ul {
-  list-style: none;
-  padding: 3rem 0 6rem 0;
-  line-height: 4rem;
-  text-align: start;
-}
-.container__card--buy-simple {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  background-color: var(--white);
-}
-.container__card--buy-simple__standard {
-  border: 0.2rem solid var(--gray-2);
-  width: 35.5rem;
-  height: 53.3rem;
-  gap: 2rem;
-  text-align: start;
-  padding: 2rem 2.8rem;
-}
-.container__card--buy-simple__standard--2 {
-  background-color: var(--blue-primary);
-  color: var(--white);
-}
-.container__card--buy-simple__standard ul {
-  list-style: none;
-  padding: 3rem 0 6rem 0;
-  line-height: 4rem;
-  text-align: start;
-}
-.container__card--buy-simple__standard-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 1rem;
 }
 
 .cta--simple {
@@ -12929,6 +12866,112 @@ textarea.form-control-lg {
   gap: 1rem;
   align-items: start;
   padding-top: 2rem;
+}
+
+.card.card--simple-height {
+  max-width: 35.5rem;
+  position: relative;
+}
+
+.card.card--buy-description {
+  border: 0.2rem solid var(--gray-2);
+  width: 35.5rem;
+  height: 53.3rem;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem 2.8rem;
+}
+.card.card--buy-description .card__list {
+  list-style: none;
+  padding: 1rem 0 2rem 0;
+  line-height: 4rem;
+}
+
+.card.card--buy-description-none {
+  border: 0.2rem solid var(--gray-2);
+  width: 35.5rem;
+  height: 53.3rem;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem 2.8rem;
+  background-color: var(--blue-primary);
+  color: var(--white);
+}
+.card.card--buy-description-none .card__list {
+  list-style: none;
+  padding: 1rem 0 2rem 0;
+  line-height: 4rem;
+}
+
+.card.card--simple-height-long {
+  max-width: 26.4rem;
+  position: relative;
+}
+
+.card.card--big {
+  max-width: 55.8rem;
+  position: relative;
+}
+
+.card.card--buy-good {
+  border: 0.2rem solid var(--gray-2);
+  width: 35.5rem;
+  height: 53.3rem;
+  gap: 2rem;
+  text-align: start;
+  padding: 2rem 2.8rem;
+  background-color: var(--white);
+  color: var(--black);
+}
+.card.card--buy-good .card__list {
+  list-style: none;
+  padding: 1rem 0 2rem 0;
+  line-height: 4rem;
+  text-align: start;
+}
+
+.card.card--buy-simple {
+  border: 0.2rem solid var(--gray-2);
+  width: 35.5rem;
+  height: 53.3rem;
+  gap: 2rem;
+  text-align: start;
+  padding: 2rem 2.8rem;
+  background-color: var(--blue-primary);
+  color: var(--white);
+}
+.card.card--buy-simple .card__list {
+  list-style: none;
+  padding: 1rem 0 2rem 0;
+  line-height: 4rem;
+  text-align: start;
+}
+.card.card--buy-simple .card__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.card.card--buy-color {
+  border: 0.2rem solid var(--gray-2);
+  width: 35.5rem;
+  height: 53.3rem;
+  gap: 2rem;
+  text-align: start;
+  padding: 2rem 2.8rem;
+}
+.card.card--buy-color .card__list {
+  list-style: none;
+  padding: 1rem 0 2rem 0;
+  line-height: 4rem;
+  text-align: start;
+}
+.card.card--buy-color .card__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 .img__vector-rigth {

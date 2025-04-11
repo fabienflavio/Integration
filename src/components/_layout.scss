@@ -88,3 +88,60 @@
     }
     
 }
+
+.layout.layout--card-normal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.layout.layout--card-simple-normal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.layout.layout--card-rounded-profils{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.layout.layout--card-buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.layout.layout--simple-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.layout.layout--card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.layout.layout--content-profils{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}

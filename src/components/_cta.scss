@@ -5,7 +5,7 @@
 .cta--container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: start;
     flex-wrap: wrap;
     gap: 8rem;
@@ -14,18 +14,18 @@
 
 }
 
-
+// heigth 62
 /* 1 */
 .cta.cta--bg-black{
     display: flex;
     flex-direction: row;
-    padding: 1.2rem 3rem;
+    padding: 2.15rem 3rem;
     gap: 1rem;
     border-radius:3.2rem ;
-    padding-right: .5rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: var(--black);
     color : var(--white);
+    text-decoration: none;
     .cta--icons{
         padding: 0 1rem;
     }
@@ -50,6 +50,7 @@
         font-size: 1.4rem;
         color : var(--black);
         z-index: 10;
+        border: .2rem solid black;
         background-color: transparent;
     }
     .cta__back{
@@ -353,10 +354,7 @@
 
 /* 12 */
 .cta.cta--border-slash{
-    // background-color: var(--white);
-    // padding: 1rem 3rem 1rem 3rem;
-    // border: .2rem var(--black) solid;
-    .cta__button{
+   .cta__button{
         background-color: var(--white);
         padding: 1rem 3rem 1rem 3rem;
         border: .2rem var(--black) solid;
@@ -554,3 +552,167 @@
         transform: scale(1.8) translateX(-1.5rem) translateY(.6rem);
     }
 }
+
+
+.cta.cta--simple {
+    padding: 0.8rem 2.1rem;
+    border-radius: 3.2rem;
+    font-size: 1.6rem;
+    background-color: $color-white !important;
+    color: $color-black;
+  
+    &:hover {
+      background-color: $color-white--2 !important;
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--hover-reverse {
+    padding: 0.8rem 2.1rem;
+    border-radius: 3.2rem;
+    font-size: 1.6rem;
+    border: 0.2rem solid $color-white;
+    background-color: $color-transparent;
+    color: $color-white;
+  
+    &:hover {
+      border: 0.2px solid $color-white;
+      background-color: $color-white;
+      color: $color-black;
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--simple-big {
+    padding: 1.4rem 2.1rem;
+    border-radius: 3.2rem;
+    border: 0;
+    font-size: 1.6rem;
+    background-color: $color-primary !important;
+    color: $color-white;
+   
+    &:hover {
+      transform: scale(1.04);
+      transition: all .5s;
+    }
+  
+    @media screen and (max-width: 575px) {
+      & {
+        padding: 0.4rem 2.1rem;
+        border-radius: 3.2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  .cta.cta--subscriber {
+    padding: 1rem 1.8rem;
+    border-radius: 5rem;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: $color-white;
+  
+    &:hover {
+      transform: scale(1.04);
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--buy-blue {
+    padding: 1rem 2rem;
+    border: 0;
+    font-weight: 500;
+    background-color: var(--blue-primary);
+    color: var(--white);
+  
+    &:hover {
+      background-color: var(--blue-primary-hover);
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--buy-white {
+    padding: 1rem 2rem;
+    border: 0;
+    font-weight: 500;
+    background-color: var(--white);
+  
+    &:hover {
+      background-color: var(--gray-2);
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta-nostyle {
+    padding-top: 5rem;
+    border: 0;
+    font-weight: 500;
+    background-color: var(--white);
+  
+    &:hover {
+      background-color: var(--gray-2);
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--buy-w-full {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0;
+    box-shadow: 0.4rem 0.4rem 4rem var(--gray-1);
+    font-weight: 500;
+    background-color: var(--white);
+  
+    &:hover {
+      background-color: var(--gray-2);
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--buy-w-full-blue {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0;
+    box-shadow: 0.4rem 0.4rem 4rem var(--gray-1);
+    font-weight: 500;
+    background-color: var(--blue-primary);
+    color: var(--white);
+  
+    &:hover {
+      background-color: var(--blue-primary-hover);
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--buy-none {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0.2rem solid var(--white);
+    font-weight: 500;
+    background-color: var(--transparent);
+    color: var(--white);
+  
+    &:hover {
+      background-color: var(--white);
+      color: black;
+      transition: all .5s;
+    }
+  }
+  
+  .cta.cta--buy-b-black {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0.2rem solid var(--gray-1);
+    font-weight: 500;
+    background-color: var(--transparent);
+    color: var(--black);
+  
+    &:hover {
+      background-color: var(--gray-2);
+      transition: all .5s;
+    }
+  }  

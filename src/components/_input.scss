@@ -1,14 +1,16 @@
 .input{
-    &--text-subscriber{
-        font-size: 1.2rem;
-        outline: 0;
-        border: 0;
-        padding: 1rem;
-        border-radius: 5rem;
-        width: 17.5rem;
-        background-color: $color-transparent-white;
-        &::placeholder{
-            color: $color-black;
-        }
+    
+}
+
+.input.input--text-subscriber{
+    font-size: 1.2rem;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 17.5rem;
+    background-color: $color-transparent-white;
+    &::placeholder{
+        color: $color-black;
     }
 }

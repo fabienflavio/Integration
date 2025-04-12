@@ -21,8 +21,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 48.5rem;
         height: 53.2rem;
+        width: 48.5rem;  
     }
 
     .cleaner__content-box{
@@ -142,7 +142,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        transform: translateX(-1rem) translateY(-1.2rem);
+        transform: translateX(-1rem) ;
 
    }
 }

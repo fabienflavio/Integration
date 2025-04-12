@@ -39,11 +39,14 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 3rem; 
+        padding-top: 1rem; 
         gap: 2rem;
         @media screen and (max-width: 575px) {
             &{       
                  gap: 0.1rem;
+                 padding-top: 0rem; 
+                 padding-bottom: 2rem; 
+                
             }
          
         }
@@ -57,12 +60,14 @@
 
 .card.card--normal{
     position: relative;
-    max-width: 46rem ;  
+    max-width: 46rem ;
+    border: 0;  
 }
 
 .card.card--simple-normal{
-        max-width: 26.4rem  ;
-        position: relative;
+    max-width: 26.4rem  ;
+    position: relative;
+    border: 0;
 }
 
 .card--rounded-profils{
@@ -71,27 +76,31 @@
     max-width: 40.4rem  ;
     gap: 2rem;
     align-items: start;
+    border: 0;
 }
 
 .card.card--buy-one{
-        max-width: 54.7rem  ;
-        gap: 2rem;
-        text-align: center;
-        padding: 8.8rem;
+    max-width: 54.7rem  ;
+    gap: 2rem;
+    text-align: center;
+    padding: 8.8rem;
+    border: 0;
 }
 
 .card.card--buy-two{
-        max-width: 54.7rem  ;
-        gap: 2rem;
-        text-align: center;
-        padding: 8.8rem;
-        background-color: var(--blue-primary);
-        color: var(--white);
+    max-width: 54.7rem  ;
+    gap: 2rem;
+    text-align: center;
+    padding: 8.8rem;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    border: 0;
 }
 
 .card.card--simple-content{
     max-width: 36rem  ;
     position: relative;
+    border: 0;
     .card__content{
         padding-left: 2rem;
         border: .4rem solid var(--gray-2);
@@ -115,6 +124,7 @@
     padding: 1.6rem;
     background-color: var(--blue-primary);
     color: var(--white);
+    border: 0;
     .card__container-content{
         display: flex;
         flex-direction: row;
@@ -128,6 +138,7 @@
 .card.card--simple-height{
     max-width: 35.5rem ;
     position: relative;
+    border: 0;
 }
 
 .card.card--buy-description{
@@ -153,7 +164,7 @@
     padding: 2rem 2.8rem ;
     background-color: var(--blue-primary);
     color: var(--white);
-    
+    border: 0;
     .card__list{
         list-style : none;
         padding:  1rem 0 2rem 0;
@@ -164,11 +175,13 @@
 .card.card--simple-height-long{
     max-width:  26.4rem  ;
     position: relative;
+    border: 0;
 }
 
 .card.card--big{
     max-width: 55.8rem ;
     position: relative;
+    border: 0;
 }
 
 .card.card--buy-good{
@@ -197,6 +210,7 @@
     padding: 2rem 2.8rem ;
     background-color: var(--blue-primary);
     color: var(--white);
+    border: 0;
     .card__list{
         list-style : none;
         padding:  1rem 0 2rem 0;
@@ -218,7 +232,7 @@
     gap: 2rem;
     text-align: start;
     padding: 2rem 2.8rem ;
-  
+    border: 0;
     .card__list{
         list-style : none;
         padding:  1rem 0 2rem 0;

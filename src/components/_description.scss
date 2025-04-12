@@ -1,141 +1,146 @@
 .description{
-    margin: 0 ;
-    &--primary{
-        max-width: 62.2rem;
-        padding-top: 3rem;
-        color: $color-primary;
-        @media screen and (max-width: 575px) {
-            &{
-                max-width: 62.2rem;
-                padding-top: 0rem;
-                color: $color-primary; 
-                font-size: 1.2rem;
-            }
-        }
-        
-    }
-
-    &--big-header{
-        max-width: 62.2rem;
-        padding-top: 3rem;
-        color: $color-white;  
-        line-height: 2.8rem;
-        @media screen and (max-width: 575px) {
-            &{
-                padding-top: 2rem;
-                font-size: 1.2rem;
-                text-align: center;
-            }
-        }
-    }
-    &--nature{
-        color: $color-black; 
-        padding-top: 2rem;
-        font-size: 1.4rem;
-        @media screen and (max-width: 575px) {
-            &{
-                color: $color-black; 
-                padding-top: 1rem;
-                font-size: 1.2rem;
-            }
-        }
-       
-    }
-
-    &--call{
-        background-color: $color-transparent;       
-        color: $color-primary;
-        &:hover{
-            
-            color: $color-primary;
-        }
-    }
-
     
-    &--number{
-        color: $color-black; 
-        padding-top: 0rem;
-        font-size: 1.2rem;
-        @media screen and (max-width: 575px)  {
-            &{
-                color: $color-black; 
-                padding-top: 0rem;
-                font-size: 1rem;
-            }
-        }
-       
-    }
+}
 
-    &--img-person{
-        position: absolute;
-        font-size: 1rem;
-        transform: translateX(8rem);
-        max-width: 16.5rem;
-        padding-top: .4rem;
-        &-content{
-            font-size: .8rem;
-            max-width: 13.5rem;
+.description.description--primary{
+    max-width: 62.2rem;
+    padding-top: 3rem;
+    color: $color-primary;
+    @media screen and (max-width: 575px) {
+        &{
+            max-width: 62.2rem;
+            padding-top: 0rem;
+            color: $color-primary; 
+            font-size: 1.2rem;
+        }
+    }
+    
+}
+
+.description.description--big-header{
+    max-width: 62.2rem;
+    padding-top: 3rem;
+    color: $color-white;  
+    line-height: 2.8rem;
+    @media screen and (max-width: 575px) {
+        &{
+            padding-top: 2rem;
+            font-size: 1.2rem;
             text-align: center;
-        } 
-        &-footer{
-            font-size: 1.2rem;
-            max-width: 22rem;
-           font-weight: 600;
-        } 
-          
-    }
-
-    &--header-person{
-        font-size: 1.2rem;
-        max-width: 5.5rem;
-
-    }
-
-    &--style{
-       border: .2rem solid $color-cleaner;
-       border-radius: .8rem;
-       font-size: 1.2rem;
-       padding: .2rem .4rem;
-       color: $color-cleaner;
-       background-color: $color-cleaner-transparent;
-        &-left{
-            font-size: 1.2rem;
-            color: $color-cleaner;
-            padding: .2rem .4rem;
         }
     }
-    &--content-card{
-        max-width: 46rem ;
-        padding-top:  2.7rem;
-        line-height: 3rem;
-       
+}
+.description.description--nature{
+    color: $color-black; 
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    @media screen and (max-width: 575px) {
+        &{
+            color: $color-black; 
+            padding-top: 1rem;
+            font-size: 1.2rem;
+        }
     }
-    &--content-card-row{
-        max-width: 27.9rem ;
-        padding-top:  2.1rem;
-        line-height: 3rem;
+   
+}
+
+.description.description--call{
+    background-color: $color-transparent;       
+    color: $color-primary;
+    &:hover{
+        color: $color-primary;
     }
-    &--content-card-center{
-        max-width: 35.7rem ;
-        padding-top:  2.1rem;
-        line-height: 3rem;
-        padding-bottom:  2.1rem;
+}
+
+
+.description.description--number{
+    color: $color-black; 
+    padding-top: 0rem;
+    font-size: 1.2rem;
+    @media screen and (max-width: 575px)  {
+        &{
+            color: $color-black; 
+            padding-top: 0rem;
+            font-size: 0.8rem;
+        }
     }
-    &--content-card-start{
-        max-width: 35.7rem ;
-        padding-top:  2.1rem;
-        line-height: 3rem;
-        padding-bottom:  2.1rem;
-        text-align: start;
-    }
-    &--content-card-profils{
-        max-width: 35.7rem ;
-        padding-top:  .4rem;
-        line-height: 3rem;
-        padding-bottom:  2.1rem;
-        text-align: start;
-    }
-    &--content-card-8{
-        padding-top:  .8rem;
-    }
+   
+}
+
+.description.description--img-person{
+    position: absolute;
+    font-size: 1rem;
+    transform: translateX(8rem);
+    max-width: 16.5rem;
+    padding-top: .4rem;
+  
+}
+
+.description.description--img-person-content{
+    font-size: .8rem;
+    max-width: 13.5rem;
+    text-align: center;
+} 
+
+.description.description--img-person-footer{
+    font-size: 1.2rem;
+    max-width: 22rem;
+    font-weight: 600;
+} 
+  
+
+.description.description--header-person{
+    font-size: 1.2rem;
+    max-width: 5.5rem;
+
+}
+
+.description.description--style{
+   border: .2rem solid $color-cleaner;
+   border-radius: .8rem;
+   font-size: 1.2rem;
+   padding: .2rem .4rem;
+   color: $color-cleaner;
+   background-color: $color-cleaner-transparent;
+   
+}
+
+.description.description--style-left{
+    font-size: 1.2rem;
+    color: $color-cleaner;
+    padding: .2rem .4rem;
+}
+.description.description--content-card{
+    max-width: 46rem ;
+    padding-top:  2.7rem;
+    line-height: 3rem;
+   
+}
+.description.description--content-card-row{
+    max-width: 27.9rem ;
+    padding-top:  2.1rem;
+    line-height: 3rem;
+}
+.description.description--content-card-center{
+    max-width: 35.7rem ;
+    padding-top:  2.1rem;
+    line-height: 3rem;
+    padding-bottom:  2.1rem;
+}
+.description.description--content-card-start{
+    max-width: 35.7rem ;
+    padding-top:  2.1rem;
+    line-height: 3rem;
+    padding-bottom:  2.1rem;
+    text-align: start;
+}
+.description.description--content-card-profils{
+    max-width: 35.7rem ;
+    padding-top:  .4rem;
+    line-height: 3rem;
+    padding-bottom:  2.1rem;
+    text-align: start;
+}
+.description.description--content-card-8{
+    padding-top:  .8rem;
 }

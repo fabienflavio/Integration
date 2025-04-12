@@ -8,13 +8,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-scss": "nodemon --watch src/components --ext scss --exec 'node generate-index.js'"
+    "watch-scss": "nodemon --watch src/components --ext scss --exec 'node generate-index.js'",
+    "sass": "sass --watch src/main.scss:src/main.css"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "bootstrap": "^5.3.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "sass": "^1.86.3"
   }
 }

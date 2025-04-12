@@ -42,23 +42,20 @@
 /* 2 */
 .cta.cta--shadow-yellow{
     position: relative;
-    width: 16rem;
-    height: 5rem;
-    .cta__button{
-        position: absolute;
-        padding: 1.2rem 3rem;
-        font-size: 1.4rem;
-        color : var(--black);
-        z-index: 10;
-        border: .2rem solid black;
-        background-color: transparent;
-    }
+    width: auto;
+    height: 6.1rem;
+    text-decoration: none;
+    padding: 2.1rem 3rem;
+    border: .2rem solid var(--black);
+    color:var(--black) ;
     .cta__back{
         position: absolute;
-        width: 14rem;
-        height: 4.4rem;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 6.1rem;
         background-color: var(--yellow);
-        z-index: 5;
+        z-index: -5;
         transform: translateX(.6rem) translateY(.6rem);
     }
     &:hover .cta__back{
@@ -70,27 +67,26 @@
 /* 3 */
 .cta.cta--double-border-solid{
     position: relative;
-    width: 16rem;
-    height: 5rem;
-    .cta__button{
-        position: absolute;
-        background-color: var(--white);
-        padding: 1.2rem 3rem;
-        border: .1rem var(--gray-1) solid;
-        cursor: pointer !important;
-    }
+    padding: 1.6rem 3rem;
+    margin-top: .9rem ;
+    height: 5.2rem;
+    text-decoration: none;
+    border: .1rem solid var(--black);
+    color:var(--black) ;
     .cta__back{
         position: absolute;
-        width: 15.9rem;
-        height: 5.5rem;
+        left: 0;
+        top: 0;
+        width:  110%;
+        height: 130%;
         border: .2rem var(--black) solid;
         z-index: -5;
-        transform: translateX(-0.4rem) translateY(-0.5rem);
+        transform: translateX(-0.7rem) translateY(-0.8rem);
     }
     &:hover .cta__back{
-        width: 14.9rem;
-        height: 4.5rem;
         transition: all .5s;
+        width:  100%;
+        height: 100%;
         transform: translateX(0rem) translateY(0rem);
 
     }
@@ -99,20 +95,20 @@
 /* 4 */
 .cta.cta--double-border-dashed{
     position: relative;
-    width: 16rem;
-    height: 5rem;
-    .cta__button{
-        position: absolute;
-        background-color: var(--white);
-        padding: 1.2rem 3rem;
-        border: .2rem var(--black) solid;
-        cursor: pointer !important;
-    }
-
+    width: auto;
+    height: 6.1rem;
+    text-decoration: none;
+    padding: 1.8rem 3rem;  
+    border: .2rem solid var(--black);
+    color:var(--black) ;
+    cursor: pointer !important;
+    background-color: var(--white);
     .cta__back{
         position: absolute;
-        width: 15rem;
-        height: 4.5rem;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 6.1rem;
         border: .3rem var(--yellow) dashed;
         transform: translateX(.5rem) translateY(.5rem);
         z-index: -1;
@@ -130,9 +126,12 @@
 /* 5 */
 .cta.cta--border-dashed{
     background-color: var(--white);
-    padding: .6rem .8rem .6rem 3rem;
+    padding: 1.3rem .8rem 1.3rem 3rem;
     border: .2rem var(--black) dashed;
-   
+    cursor: pointer !important;
+    color: var(--black);
+    text-decoration: none;
+    height: 6.1rem;
     .cta__icons{
         padding: .8rem;
     }
@@ -149,15 +148,18 @@
 /* 6 */
 .cta.cta--box-shadow{
     background-color: var(--white);
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1.7rem 4rem;
     border: .2rem var(--black) solid;
     box-shadow: .2rem .2rem .1rem var(--black);
+    color: var(--black);
+    text-decoration: none;
+    height: 6.1rem;
     .cta__container{
         position: absolute;
         background-color: var(--black);
         border-radius: 100%;
         padding:  .1rem .8rem;
-        transform: translateX(2rem);   
+        transform: translateX(3rem);   
     }
     .cta__icons{
             color: var(--white);
@@ -171,14 +173,17 @@
 
     &:hover .cta__container{
         transition: all .5s;
-        transform: scale(1.1) translateX(1.7rem);        }
+        transform: scale(1.1) translateX(2.7rem);        }
 }
 
 /* 7 */
 .cta.cta--arrow{
     background-color: var(--white);
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1.7rem 3rem ;
     border: .2rem var(--black) solid;
+    color: var(--black);
+    text-decoration: none;
+    height: 6.1rem;
     .cta__container{
         position: absolute;
         border-radius: 100%;
@@ -199,30 +204,38 @@
 /* 8 */
 .cta.cta--border-top-bottom-dashed{
     position: relative;
-    width: 16rem;
-    height: 5rem;
-    .cta__button{
-        position: absolute;
-        padding: 1.2rem 3rem;
-        font-size: 1.4rem;
-        color : var(--white);
-        z-index: 10;
-        background-color: transparent;
-        border-top: dotted .2rem var(--white);
-        border-bottom: dotted .2rem var(--white);
-        border-left: dotted 0rem var(--white);
-        border-right: dotted 0rem var(--white);    
-    }
+    width: auto;
+    height: 5.7rem;
+    background-color: transparent;
+    border-top: dotted .2rem var(--white);
+    border-bottom: dotted .2rem var(--white);
+    border-left: dotted 0rem var(--white);
+    border-right: dotted 0rem var(--white); 
+    padding: 1.8rem 3rem;  
+    color : var(--white);
+    text-decoration: none;
+    cursor: pointer;
+
+    // .cta__button{
+    //     position: absolute;
+    //     padding: 1.2rem 3rem;
+    //     font-size: 1.4rem;
+    //     color : var(--white);
+    //     z-index: 10;
+        
+    // }
     .cta__back{
         position: absolute;
-        width: 14.2rem;
-        height: 5.3rem;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 6.1rem;
         background-color: var(--black);
-        z-index: 5;
+        z-index: -5;
         transform:  translateY(-0.4rem);
         
     }
-    &:hover .cta__button {
+    &:hover {
       color: var(--black);     
     }
     &:hover .cta__back {
@@ -235,9 +248,7 @@
 
 /* 9 */
 .cta.cta--simple-shadow{
-    display: flex;
-    flex-direction: row;
-    padding: 1.2rem 3rem;
+    padding: 2.2rem 4rem;
     gap: 1rem;
     border: 0;
     border-radius:3.2rem ;
@@ -245,6 +256,7 @@
     background-color: var(--white);
     box-shadow: .3rem .3rem .4rem var(--gray-1);
     color : var(--black);
+    text-decoration: none;
     &:hover{
         transition: all .5s;
         background-color: var(--black);
@@ -256,11 +268,14 @@
 /* 10 */
 .cta.cta--border-top-bottom{
     background-color: var(--white);
-    padding: .6rem .8rem .6rem 3rem;
+    padding: 1.3rem .8rem 1.3rem 3rem;
     border-left:0 ;
     border-right:0 ;
     border-bottom: .2rem var(--black) solid;
     border-top: .2rem var(--black) solid;
+    text-decoration: none;
+    cursor: pointer;
+    color : var(--black);
     .cta__icons{
         padding: .8rem;
     }
@@ -273,28 +288,23 @@
 /* 11 */
 .cta.cta--four-border-part{
     position: relative;
-    width: 16rem;
-    height: 5rem;
-    .cta__button{
-        display: flex;
-        flex-direction: row;
-        padding: 1.5rem 3rem;
-        gap: 1rem;
-        border: 0 ;
-        font-size: 1.4rem;
-        color : var(--black);
-        cursor: pointer;
-        background-color:  var(--gray);
-    }
-   
+    padding: 2.3rem 5rem;
+    gap: 1rem;
+    border: 0 ;
+    font-size: 1.4rem;
+    color : var(--black);
+    cursor: pointer;
+    background-color:  var(--gray);
+    text-decoration: none;
     .cta__part-one{
         position: absolute;
         border-top:.2rem solid  var(--black) ;
-        width: 10rem;
+        width: 70%;
         height: .2rem;
         padding: 0rem;
         cursor: pointer;
-        transform:  translateX(-1rem) translateY(-4.5rem);
+        top: 0;
+        left: 0;
     }
 
     .cta__part-two{
@@ -304,49 +314,50 @@
         height: .2rem;
         padding: 0rem;
         cursor: pointer;
-        transform: rotate(90deg) translateX(-3.5rem) translateY(2rem);
+        transform: rotate(90deg) translateX(1rem) translateY(1rem);
+        top: 0;
+        left: 0;
     }
 
    .cta__part-three{
         position: absolute;
-        border-top:.2rem solid  var(--black) ;
+        border-bottom:.2rem solid  var(--black) ;
         width: 4rem;
         height: .2rem;
         padding: 0rem;
         cursor: pointer;
         right: 0;
-        transform: rotate(90deg) translateX(-1.2rem) translateY(.2rem);
+        transform: rotate(90deg) translateX(2.8rem) translateY(-1rem);
     }
 
    .cta__part-four{
     
         position: absolute;
         border-top:.2rem solid  var(--black) ;
-        width: 10rem;
+        width: 70%;
         height: .2rem;
         padding: 0rem;
         cursor: pointer;
         right: 0;
-        transform:  translateX(-1.5rem);
+        bottom: 0;
+        right:  0;
     }
 
     &:hover .cta__part-one{
-        transform:  translateX(0rem) translateY(-4.5rem);
         transition: all .5s;
 
     }
     &:hover .cta__part-two{
-        transform: rotate(90deg) translateX(-2.6rem) translateY(2rem);
+        transform: rotate(90deg) translateX(2rem) translateY(2rem);
         transition: all .5s;
        
     }
     &:hover .cta__part-three{
-        transform: rotate(90deg) translateX(-1.9rem) translateY(.2rem);
+        transform: rotate(90deg) translateX(1.8rem) translateY(-2rem);
         transition: all .5s;
 
     }
     &:hover .cta__part-four{
-        transform:  translateX(-2.1rem);
         transition: all .5s;
 
     }
@@ -354,18 +365,22 @@
 
 /* 12 */
 .cta.cta--border-slash{
-   .cta__button{
-        background-color: var(--white);
-        padding: 1rem 3rem 1rem 3rem;
-        border: .2rem var(--black) solid;
-    }
+    background-color: var(--white);
+    padding: 2rem 3rem 2rem 3rem;
+    border: .2rem var(--black) solid;
+    text-decoration: none;
+    color : var(--black);
+    position: relative;
     .cta__border-one{
         position: absolute;
         border-top:.2rem solid  var(--black) ;
-        width: 4rem;
+        left: 0;
+        top: 0;
+        width: 5rem;
         height: 2rem;
         padding: 2rem;
-        transform: rotate(135deg) translateY(14.6rem) translateX(10.8rem);
+        // transform: rotate(135deg) translateY(14.6rem) translateX(10.8rem);
+        transform: rotate(130deg) translateY(4rem) translateX(.2rem);
         background-color: var(--white) ;
         z-index: 5;
 
@@ -373,39 +388,44 @@
     .cta__border-two{
         position: absolute;
         border-bottom:.2rem solid  var(--black) ;
-        width: 3rem;
+        bottom:  0;
+        right:  0;
+        width: 5rem;
         height: .2rem;
         padding: 2rem;
-        transform: rotate(135deg) translateX(3rem) translateY(-0.8rem);
+        transform: rotate(130deg) translateY(-4.2rem)  translateX(0rem);
+        // transform: rotate(135deg) translateX(3rem) translateY(-0.8rem);
         background-color: var(--white);
         z-index: 5;
     }
      &:hover .cta__border-one{
-        transform: rotate(90deg) translateY(19rem) translateX(.0rem);
+        transform: rotate(90deg) translateY(5.1rem) translateX(.8rem);
         transition: all .5s;
         background-color: transparent;
+        width: 6.2rem;
 
     }
     &:hover .cta__border-two{
-        transform: rotate(90deg) translateX(.0rem) translateY(-.0rem);
+        transform: rotate(90deg) translateY(-5.2rem)  translateX(-.8rem);
         transition: all .5s;
         background-color: transparent;
+        width: 6.2rem;
     }
 }
 
 /* 13 */
 .cta.cta--icons-priority{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: .2rem 2rem .2rem .4rem;
+    padding: 1rem 4rem 1rem .8rem;
     gap: 1rem;
-    border-radius:3.2rem ;
+    border-radius:10rem;
     font-size: 1.4rem;
     background-color: var(--white);
     color : var(--black);
+    border: .2rem solid var(--black);
+    text-decoration: none;
     .cta__icons{
-        padding: 1.2rem 1.4rem;
+        margin-right: 1.2rem;
+        padding: 1.8rem 1.8rem;
         border-radius: 100%;
         background-color: var(--black);
         color: var(--white);

@@ -4,18 +4,19 @@
 
 .img.img--content{
     position: absolute;
-    width: 48.5rem;        
-    height: 53.2rem;
-    z-index: -1;
-    object-fit: cover;
-    
-}
-.img.img--desert{
-    position: absolute;
-    width: 48.5rem;           
+    width: 45%;
     height: 53.6rem;
     z-index: -1;
     object-fit: cover;
+    border: 2px solid black;
+}
+.img.img--desert{
+    position: absolute;
+    width: 45%;          
+    height: 53.6rem;
+    z-index: -1;
+    object-fit: cover;
+    border: 2px solid rgb(0, 255, 76);
 }
 .img.img--person-one{
     width: 3rem;

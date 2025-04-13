@@ -13323,7 +13323,7 @@ textarea.form-control-lg {
 
 /* 13 */
 .cta.cta--icons-priority {
-  padding: 1rem 4rem 1rem 0.8rem;
+  padding: 0.7rem 4rem 0.7rem 0.8rem;
   gap: 1rem;
   border-radius: 10rem;
   font-size: 1.4rem;
@@ -13333,7 +13333,7 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .cta.cta--icons-priority .cta__icons {
-  margin-right: 1.2rem;
+  margin-right: 1rem;
   padding: 1.8rem 1.8rem;
   border-radius: 100%;
   background-color: var(--black);
@@ -13346,11 +13346,13 @@ textarea.form-control-lg {
 
 /* 14 */
 .cta.cta--bg-linear-gradient {
-  padding: 1.2rem 3rem;
+  text-decoration: none;
+  padding: 2rem 4rem;
   border-radius: 3.2rem;
   font-size: 1.4rem;
   border: 0;
   color: var(--white);
+  cursor: pointer;
   background-image: linear-gradient(to right, var(--blue-cyan-), var(--blue-dark-));
 }
 .cta.cta--bg-linear-gradient:hover {
@@ -13361,7 +13363,8 @@ textarea.form-control-lg {
 /* 15 */
 .cta.cta--border-linear-gradient-border-text {
   position: relative;
-  padding: 1.2rem 3rem;
+  text-decoration: none;
+  padding: 2rem 4rem;
   display: inline-block;
   border-radius: 50px;
   overflow: hidden;
@@ -13396,8 +13399,10 @@ textarea.form-control-lg {
 .cta.cta--border-bottom-icons {
   border: 0;
   background-color: var(--white);
-  padding: 1rem 4rem 1rem 1rem;
+  padding: 2rem 4rem 2rem 1rem;
   border-bottom: 0.2rem var(--black) solid;
+  text-decoration: none;
+  color: var(--black);
 }
 .cta.cta--border-bottom-icons .cta__icons-container {
   position: absolute;
@@ -13425,6 +13430,8 @@ textarea.form-control-lg {
   background-color: white;
   border: 0;
   z-index: 4;
+  text-decoration: none;
+  color: var(--black);
 }
 .cta.cta--cercle-back .cta__img {
   width: 2rem;
@@ -13453,6 +13460,8 @@ textarea.form-control-lg {
   background-color: var(--white);
   padding: 0.6rem 0.8rem 0.6rem 3rem;
   border: 0;
+  text-decoration: none;
+  color: var(--black);
 }
 .cta.cta--dot-arrow .cta__icons {
   padding: 0.8rem;

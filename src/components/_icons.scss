@@ -44,8 +44,9 @@
 }
 
 .icons.icons--mouse{
-  position: absolute;
-  bottom: 1.5rem;
+     position: absolute;
+     bottom: 0;
+     transform: translateX(90.5rem) translateY(-2rem);
   @media screen and (max-width:1200px) {
        &{
             display: none !important;
